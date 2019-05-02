@@ -1,4 +1,4 @@
-#AGREGAR EN C:\Program Files\KiCad\share\kicad\library/Analog_ADC.lib
+#AGREGAR EN C:/Program Files/KiCad/share/kicad/library/Analog_ADC.lib
 
 
 #
@@ -56,7 +56,7 @@ ENDDRAW
 ENDDEF
 
 
-#AGREGAR EN C:\Program Files\KiCad\share\kicad\library/Analog_ADC.dcm
+#AGREGAR EN C:/Program Files/KiCad\share/kicad/library/Analog_ADC.dcm
 
 $CMP ADS8694
 D 18-Bit, 500-kSPS, 4-Channels, Single-Supply, SAR ADC with Bipolar Input Range, TSSOP-38
