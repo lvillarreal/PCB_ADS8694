@@ -47,3 +47,10 @@
 |37|SCL| Entrada Digital | clock SPI |
 |38|/CS| Entrada digital | Chip Slect SPI, activo por bajo|
 
+
+## Entrada Analógica
+
+El rango de tensión de entrada se puede configurar para ±2.5 Vref, ±1.25 Vref ; ±0.625 Vref (bipolar) o 0 a 2.5 Vref, 0 a 1.25 Vref (unipolar). La configuración es independiente para cada canal (4 canales).
+El dispositivo muestrea la diferencia entre AIN_nP y AIN_nGND, donde el valor máximo que puede tomar AIN_nGND es ±0.1 V.
+
+![Entrada_Analógica](https://github.com/lvillarreal/PCB_ADS8694/blob/master/images/entrada_analogica.JPG)
