@@ -18,10 +18,6 @@ Text GLabel 4750 2150 0    50   Input ~ 0
 DVDD
 Text GLabel 5250 2150 2    50   Input ~ 0
 DVDD
-Text GLabel 4750 2050 0    50   Input ~ 0
-DGND
-Text GLabel 5250 2050 2    50   Input ~ 0
-DGND
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J?
 U 1 1 5CCB59D8
@@ -33,27 +29,25 @@ F 3 "~" H 4950 1850 50  0001 C CNN
 	1    4950 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6000 3600 1    50   Input ~ 0
+Text GLabel 6350 3050 1    50   Input ~ 0
 DVDD
-Text GLabel 5900 3600 1    50   Input ~ 0
+Text GLabel 6250 3050 1    50   Input ~ 0
 AVDD
-Text GLabel 5800 3600 1    50   Input ~ 0
+Text GLabel 6150 3050 1    50   Input ~ 0
 AVDD
-Text GLabel 6000 6200 3    50   Input ~ 0
+Text GLabel 6350 5650 3    50   Input ~ 0
 DGND
 $Comp
 L Analog_ADC:ADS8694 U?
 U 1 1 5CCB2EF2
-P 5900 4900
-F 0 "U?" H 5900 4950 50  0000 C CNN
-F 1 "ADS8694" H 5900 4850 50  0000 C CNN
-F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 5900 4900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 6850 6200 50  0001 C CNN
-	1    5900 4900
+P 6250 4350
+F 0 "U?" H 6250 4400 50  0000 C CNN
+F 1 "ADS8694" H 6250 4300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 6250 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 7200 5650 50  0001 C CNN
+	1    6250 4350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5800 6200 3    50   Input ~ 0
-AGND
 $Comp
 L Regulator_Linear:LM7805_TO220 U?
 U 1 1 5CCB832F
@@ -95,60 +89,42 @@ Wire Wire Line
 	2300 1000 2500 1000
 Wire Wire Line
 	2500 1000 2500 1050
-Text GLabel 2000 1300 3    50   Input ~ 0
-AGND
-Text GLabel 1450 1350 3    50   Input ~ 0
-AGND
-Text GLabel 2500 1350 3    50   Input ~ 0
-AGND
 Text GLabel 2500 1000 2    50   Input ~ 0
 AVDD
-Text GLabel 1450 1000 0    50   Input ~ 0
-Batt_+7V
-Text GLabel 6400 4800 2    50   Input ~ 0
+Text GLabel 6750 4250 2    50   Input ~ 0
 REFSEL
-Text GLabel 6400 5100 2    50   Input ~ 0
+Text GLabel 6750 4550 2    50   Input ~ 0
 ALARM
-Text GLabel 6400 5300 2    50   Input ~ 0
+Text GLabel 6750 4750 2    50   Input ~ 0
 REFCAP
-Text GLabel 6400 5500 2    50   Input ~ 0
+Text GLabel 6750 4950 2    50   Input ~ 0
 REFIO
-Text GLabel 6400 4600 2    50   Input ~ 0
+Text GLabel 6750 4050 2    50   Input ~ 0
 RST-PD
-Text GLabel 6400 4400 2    50   Input ~ 0
+Text GLabel 6750 3850 2    50   Input ~ 0
 DAISY
-Text GLabel 6400 4300 2    50   Input ~ 0
+Text GLabel 6750 3750 2    50   Input ~ 0
 CS
-Text GLabel 6400 4200 2    50   Input ~ 0
+Text GLabel 6750 3650 2    50   Input ~ 0
 SCLK
-Text GLabel 6400 4100 2    50   Input ~ 0
+Text GLabel 6750 3550 2    50   Input ~ 0
 SDI
-Text GLabel 6400 4000 2    50   Input ~ 0
+Text GLabel 6750 3450 2    50   Input ~ 0
 SDO
-Text GLabel 5400 5800 0    50   Input ~ 0
+Text GLabel 5750 5250 0    50   Input ~ 0
 DVDD
-Text GLabel 5400 5700 0    50   Input ~ 0
+Text GLabel 5750 5150 0    50   Input ~ 0
 DVDD
-Text GLabel 5400 4000 0    50   Input ~ 0
+Text GLabel 5750 3450 0    50   Input ~ 0
 AIN_0P
-Text GLabel 5400 4200 0    50   Input ~ 0
+Text GLabel 5750 3650 0    50   Input ~ 0
 AIN_1P
-Text GLabel 5400 4400 0    50   Input ~ 0
+Text GLabel 5750 3850 0    50   Input ~ 0
 AIN_2P
-Text GLabel 5400 4600 0    50   Input ~ 0
+Text GLabel 5750 4050 0    50   Input ~ 0
 AIN_3P
-Text GLabel 5400 4100 0    50   Input ~ 0
-AIN_0GND
-Text GLabel 5400 4300 0    50   Input ~ 0
-AIN_1GND
-Text GLabel 5400 4500 0    50   Input ~ 0
-AIN_2GND
-Text GLabel 5400 4700 0    50   Input ~ 0
-AIN_3GND
 Text GLabel 8500 800  0    50   Input ~ 0
 REFSEL
-Text GLabel 8800 800  2    50   Input ~ 0
-AGND
 Text GLabel 8500 1150 0    50   Input ~ 0
 REFIO
 $Comp
@@ -162,10 +138,6 @@ F 3 "~" H 8650 1150 50  0001 C CNN
 	1    8650 1150
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8800 1150 2    50   Input ~ 0
-AGND
-Wire Wire Line
-	8500 800  8800 800 
 Text GLabel 8500 1550 0    50   Input ~ 0
 REFCAP
 $Comp
@@ -190,10 +162,6 @@ F 3 "~" H 8650 1950 50  0001 C CNN
 	1    8650 1950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8800 1550 2    50   Input ~ 0
-AGND
-Text GLabel 8800 1950 2    50   Input ~ 0
-AGND
 Wire Wire Line
 	8500 1550 8500 1950
 Text Notes 8050 2550 0    50   ~ 0
@@ -209,24 +177,9 @@ Wire Notes Line
 Text Notes 1450 1750 0    50   ~ 0
 REGULADOR DE TENSIÓN, 5V\n
 Text Notes 7450 7500 0    79   ~ 0
-PCB PARA ADC8694
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5CCD0526
-P 1800 2200
-F 0 "J?" H 1908 2381 50  0000 C CNN
-F 1 "CONECTOR DE BATERIA DE ALIMENTACIÓN" H 1908 2290 50  0000 C CNN
-F 2 "" H 1800 2200 50  0001 C CNN
-F 3 "~" H 1800 2200 50  0001 C CNN
-	1    1800 2200
-	1    0    0    -1  
-$EndComp
+PCB ADC8694 
 Wire Notes Line
 	950  650  950  1800
-Text GLabel 2000 2200 2    50   Input ~ 0
-Batt_+7V
-Text GLabel 2000 2300 2    50   Input ~ 0
-AGND
 Text GLabel 4750 1650 0    50   Input ~ 0
 SCLK
 Text GLabel 4750 1750 0    50   Input ~ 0
@@ -254,8 +207,6 @@ F 3 "~" H 9900 3150 50  0001 C CNN
 	1    9900 3150
 	1    0    0    -1  
 $EndComp
-Text GLabel 9650 3150 0    50   Input ~ 0
-DGND
 $Comp
 L Connector:Conn_01x01_Male J?
 U 1 1 5CCBC2E6
@@ -269,14 +220,6 @@ F 3 "~" H 10350 3150 50  0001 C CNN
 $EndComp
 Text Notes 9200 3700 0    50   ~ 0
 JUMPER PARA SELECCIONAR MODO DAISY-CHAIN
-Text GLabel 6400 5800 2    50   Input ~ 0
-REFGND
-Text GLabel 8550 2250 0    50   Input ~ 0
-REFGND
-Text GLabel 8800 2250 2    50   Input ~ 0
-AGND
-Wire Wire Line
-	8550 2250 8800 2250
 Wire Notes Line
 	7950 650  7950 2600
 Wire Notes Line
@@ -288,8 +231,6 @@ Wire Notes Line
 Wire Notes Line
 	11150 2850 9000 2850
 Wire Notes Line
-	2950 1950 950  1950
-Wire Notes Line
 	4150 2450 6200 2450
 Wire Notes Line
 	6200 2450 6200 650 
@@ -297,14 +238,8 @@ Wire Notes Line
 	6200 650  4150 650 
 Wire Notes Line
 	4150 650  4150 2450
-Text Notes 1000 2500 0    50   ~ 0
-BATERIA O FUENTE DE CC EXTERNA, MAYOR A 7V
-Wire Notes Line
-	950  2550 2950 2550
-Wire Notes Line
-	950  1950 950  2550
-Wire Notes Line
-	2950 1950 2950 2550
+Text Notes 1350 3050 0    50   ~ 0
+BATERIA O FUENTE DE CC EXTERNA, +-VCC
 Wire Notes Line
 	9350 2600 9350 650 
 Wire Notes Line
@@ -314,12 +249,448 @@ Wire Notes Line
 $Comp
 L Amplifier_Instrumentation:AD8221 U?
 U 1 1 5CCCE516
-P 2450 4450
-F 0 "U?" H 2450 4847 60  0000 C CNN
-F 1 "AD8221" H 2450 4741 60  0000 C CNN
-F 2 "" H 2450 4450 50  0001 C CNN
-F 3 "" H 2450 4450 50  0001 C CNN
-	1    2450 4450
+P 2150 5800
+F 0 "U?" H 2150 6197 60  0000 C CNN
+F 1 "AD8221" H 2150 6091 60  0000 C CNN
+F 2 "" H 2150 5800 50  0001 C CNN
+F 3 "" H 2150 5800 50  0001 C CNN
+	1    2150 5800
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD19055
+P 7000 5450
+F 0 "#PWR?" H 7000 5200 50  0001 C CNN
+F 1 "GNDA" H 7005 5277 50  0000 C CNN
+F 2 "" H 7000 5450 50  0001 C CNN
+F 3 "" H 7000 5450 50  0001 C CNN
+	1    7000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 5450 7000 5250
+Wire Wire Line
+	7000 5250 6750 5250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1A031
+P 8950 2050
+F 0 "#PWR?" H 8950 1800 50  0001 C CNN
+F 1 "GNDA" H 8955 1877 50  0000 C CNN
+F 2 "" H 8950 2050 50  0001 C CNN
+F 3 "" H 8950 2050 50  0001 C CNN
+	1    8950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1A37E
+P 8950 1600
+F 0 "#PWR?" H 8950 1350 50  0001 C CNN
+F 1 "GNDA" H 8955 1427 50  0000 C CNN
+F 2 "" H 8950 1600 50  0001 C CNN
+F 3 "" H 8950 1600 50  0001 C CNN
+	1    8950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1A628
+P 8950 1200
+F 0 "#PWR?" H 8950 950 50  0001 C CNN
+F 1 "GNDA" H 8955 1027 50  0000 C CNN
+F 2 "" H 8950 1200 50  0001 C CNN
+F 3 "" H 8950 1200 50  0001 C CNN
+	1    8950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 1200 8950 1150
+Wire Wire Line
+	8950 1150 8800 1150
+Wire Wire Line
+	8950 1600 8950 1550
+Wire Wire Line
+	8950 1550 8800 1550
+Wire Wire Line
+	8950 2050 8950 1950
+Wire Wire Line
+	8950 1950 8800 1950
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1B51D
+P 8950 850
+F 0 "#PWR?" H 8950 600 50  0001 C CNN
+F 1 "GNDA" H 8955 677 50  0000 C CNN
+F 2 "" H 8950 850 50  0001 C CNN
+F 3 "" H 8950 850 50  0001 C CNN
+	1    8950 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 850  8950 800 
+Wire Wire Line
+	8500 800  8950 800 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1BBE5
+P 6150 5750
+F 0 "#PWR?" H 6150 5500 50  0001 C CNN
+F 1 "GNDA" H 6155 5577 50  0000 C CNN
+F 2 "" H 6150 5750 50  0001 C CNN
+F 3 "" H 6150 5750 50  0001 C CNN
+	1    6150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5750 6150 5650
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1C799
+P 2500 2300
+F 0 "#PWR?" H 2500 2050 50  0001 C CNN
+F 1 "GNDA" H 2505 2127 50  0000 C CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1D9B3
+P 1450 1350
+F 0 "#PWR?" H 1450 1100 50  0001 C CNN
+F 1 "GNDA" H 1455 1177 50  0000 C CNN
+F 2 "" H 1450 1350 50  0001 C CNN
+F 3 "" H 1450 1350 50  0001 C CNN
+	1    1450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1DD60
+P 2000 1300
+F 0 "#PWR?" H 2000 1050 50  0001 C CNN
+F 1 "GNDA" H 2005 1127 50  0000 C CNN
+F 2 "" H 2000 1300 50  0001 C CNN
+F 3 "" H 2000 1300 50  0001 C CNN
+	1    2000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD1E0C2
+P 2500 1350
+F 0 "#PWR?" H 2500 1100 50  0001 C CNN
+F 1 "GNDA" H 2505 1177 50  0000 C CNN
+F 2 "" H 2500 1350 50  0001 C CNN
+F 3 "" H 2500 1350 50  0001 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CD1F6D3
+P 10300 4150
+F 0 "#PWR?" H 10300 3900 50  0001 C CNN
+F 1 "GNDD" H 10304 3995 50  0000 C CNN
+F 2 "" H 10300 4150 50  0001 C CNN
+F 3 "" H 10300 4150 50  0001 C CNN
+	1    10300 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 2050 0    50   Input ~ 0
+DGND
+Text GLabel 5250 2050 2    50   Input ~ 0
+DGND
+Text GLabel 10050 4000 0    50   Input ~ 0
+DGND
+Wire Wire Line
+	10300 4000 10300 4150
+Wire Wire Line
+	10050 4000 10300 4000
+Text GLabel 9550 3150 0    50   Input ~ 0
+DGND
+Wire Wire Line
+	9550 3150 9650 3150
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5CD245F0
+P 1550 2300
+F 0 "J?" H 1450 2300 50  0000 C CNN
+F 1 "Conn_01x03_Male_Alimentación_analógica_externa_(+-12V)" H 2200 2550 50  0000 C CNN
+F 2 "" H 1550 2300 50  0001 C CNN
+F 3 "~" H 1550 2300 50  0001 C CNN
+	1    1550 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 1000 0    50   Input ~ 0
++VCC
+Text GLabel 2900 2200 2    50   Input ~ 0
++VCC
+Text GLabel 1850 2400 2    50   Input ~ 0
+-VCC
+Wire Notes Line
+	950  1950 3400 1950
+Text GLabel 2650 5650 2    50   Input ~ 0
++VCC
+Text GLabel 2650 5950 2    50   Input ~ 0
+-VCC
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD2A04C
+P 3050 5950
+F 0 "#PWR?" H 3050 5700 50  0001 C CNN
+F 1 "GNDA" H 3055 5777 50  0000 C CNN
+F 2 "" H 3050 5950 50  0001 C CNN
+F 3 "" H 3050 5950 50  0001 C CNN
+	1    3050 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5950 3050 5850
+Wire Wire Line
+	3050 5850 2650 5850
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD2ABA2
+P 5100 4350
+F 0 "#PWR?" H 5100 4100 50  0001 C CNN
+F 1 "GNDA" H 5105 4177 50  0000 C CNN
+F 2 "" H 5100 4350 50  0001 C CNN
+F 3 "" H 5100 4350 50  0001 C CNN
+	1    5100 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4150 5100 4350
+Wire Wire Line
+	5100 4150 5750 4150
+Wire Wire Line
+	5750 3950 5100 3950
+Wire Wire Line
+	5100 3950 5100 4150
+Connection ~ 5100 4150
+Wire Wire Line
+	5750 3750 5100 3750
+Wire Wire Line
+	5100 3750 5100 3950
+Connection ~ 5100 3950
+Wire Wire Line
+	5750 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3750
+Connection ~ 5100 3750
+Text GLabel 2650 5750 2    50   Input ~ 0
+AIN_0P
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5CD2E712
+P 1900 3950
+F 0 "J?" H 1928 3926 50  0000 L CNN
+F 1 "Conn_01x04_Female_Entradas_analógicas_diferenciales" H 650 3600 50  0000 L CNN
+F 2 "" H 1900 3950 50  0001 C CNN
+F 3 "~" H 1900 3950 50  0001 C CNN
+	1    1900 3950
+	-1   0    0    1   
+$EndComp
+Text GLabel 2100 3750 2    50   Input ~ 0
+AIN_0+
+Text GLabel 2100 3850 2    50   Input ~ 0
+AIN_0-
+Text GLabel 2100 3950 2    50   Input ~ 0
+AIN_1+
+Text GLabel 2100 4050 2    50   Input ~ 0
+AIN_1-
+Text GLabel 2100 4650 2    50   Input ~ 0
+AIN_2P
+Text GLabel 2100 4850 2    50   Input ~ 0
+AIN_3P
+Wire Notes Line
+	900  3500 3350 3500
+Wire Notes Line
+	3350 3500 3350 4200
+Wire Notes Line
+	3350 4200 900  4200
+Wire Notes Line
+	900  4200 900  3500
+Wire Notes Line
+	900  4350 3350 4350
+$Comp
+L Device:C C?
+U 1 1 5CD3D0C7
+P 2900 2350
+F 0 "C?" H 3015 2396 50  0000 L CNN
+F 1 "100nf" H 3015 2305 50  0000 L CNN
+F 2 "" H 2938 2200 50  0001 C CNN
+F 3 "~" H 2900 2350 50  0001 C CNN
+	1    2900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD3F604
+P 2900 2500
+F 0 "#PWR?" H 2900 2250 50  0001 C CNN
+F 1 "GNDA" H 2905 2327 50  0000 C CNN
+F 2 "" H 2900 2500 50  0001 C CNN
+F 3 "" H 2900 2500 50  0001 C CNN
+	1    2900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD3F91B
+P 1850 2550
+F 0 "C?" H 1965 2596 50  0000 L CNN
+F 1 "100nf" H 1965 2505 50  0000 L CNN
+F 2 "" H 1888 2400 50  0001 C CNN
+F 3 "~" H 1850 2550 50  0001 C CNN
+	1    1850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD40B45
+P 1850 2700
+F 0 "#PWR?" H 1850 2450 50  0001 C CNN
+F 1 "GNDA" H 1855 2527 50  0000 C CNN
+F 2 "" H 1850 2700 50  0001 C CNN
+F 3 "" H 1850 2700 50  0001 C CNN
+	1    1850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2400 1850 2400
+Wire Wire Line
+	2900 2200 1750 2200
+Wire Wire Line
+	1750 2300 2500 2300
+Wire Notes Line
+	950  3150 3400 3150
+Wire Notes Line
+	3400 1950 3400 3150
+Wire Notes Line
+	950  1950 950  3150
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5CD48C0B
+P 1900 4850
+F 0 "J?" H 1928 4826 50  0000 L CNN
+F 1 "Conn_01x04_Female_Entradas_analógicas_diferenciales" H 650 4500 50  0000 L CNN
+F 2 "" H 1900 4850 50  0001 C CNN
+F 3 "~" H 1900 4850 50  0001 C CNN
+	1    1900 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD37380
+P 2100 4950
+F 0 "#PWR?" H 2100 4700 50  0001 C CNN
+F 1 "GNDA" H 2105 4777 50  0000 C CNN
+F 2 "" H 2100 4950 50  0001 C CNN
+F 3 "" H 2100 4950 50  0001 C CNN
+	1    2100 4950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	900  5250 3350 5250
+Wire Notes Line
+	3350 4350 3350 5250
+Wire Notes Line
+	900  4350 900  5250
+Wire Wire Line
+	2100 4750 2450 4750
+Wire Wire Line
+	2450 4750 2450 4950
+Wire Wire Line
+	2450 4950 2100 4950
+Connection ~ 2100 4950
+Text GLabel 1650 5950 0    50   Input ~ 0
+AIN_0+
+Text GLabel 1650 5650 0    50   Input ~ 0
+AIN_0-
+$Comp
+L Device:R R?
+U 1 1 5CD4D067
+P 1500 5850
+F 0 "R?" V 1450 5700 50  0000 C CNN
+F 1 "38C (24.3k)" V 1500 5300 50  0000 C CNN
+F 2 "" V 1430 5850 50  0001 C CNN
+F 3 "~" H 1500 5850 50  0001 C CNN
+	1    1500 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 5850 1250 5850
+Wire Wire Line
+	1250 5850 1250 5750
+Wire Wire Line
+	1250 5750 1650 5750
+Text Notes 1250 6350 0    50   ~ 0
+ACONDICIONAMIENTO, CANAL DIFERENCIAL 0\nRESISTENCIA SMD 1% 24.3k, GANANCIA FIJA DE 3
+$Comp
+L Amplifier_Instrumentation:AD8221 U?
+U 1 1 5CD5D7D9
+P 2450 6900
+F 0 "U?" H 2450 7297 60  0000 C CNN
+F 1 "AD8221" H 2450 7191 60  0000 C CNN
+F 2 "" H 2450 6900 50  0001 C CNN
+F 3 "" H 2450 6900 50  0001 C CNN
+	1    2450 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 6750 2    50   Input ~ 0
++VCC
+Text GLabel 2950 7050 2    50   Input ~ 0
+-VCC
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD5D7E1
+P 3350 7050
+F 0 "#PWR?" H 3350 6800 50  0001 C CNN
+F 1 "GNDA" H 3355 6877 50  0000 C CNN
+F 2 "" H 3350 7050 50  0001 C CNN
+F 3 "" H 3350 7050 50  0001 C CNN
+	1    3350 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7050 3350 6950
+Wire Wire Line
+	3350 6950 2950 6950
+Text GLabel 2950 6850 2    50   Input ~ 0
+AIN_0P
+Text GLabel 1950 7050 0    50   Input ~ 0
+AIN_1+
+Text GLabel 1950 6750 0    50   Input ~ 0
+AIN_1-
+Text Notes 1700 7550 0    50   ~ 0
+ACONDICIONAMIENTO, CANAL DIFERENCIAL 1\nGANANCIA VARIABLE, TRIMMER 100k\n\n
+$Comp
+L Device:R_POT_TRIM_US RV?
+U 1 1 5CD62710
+P 1300 6850
+F 0 "RV?" V 1095 6850 50  0000 C CNN
+F 1 "R_POT_TRIM_US_100k" V 1200 6750 50  0000 C CNN
+F 2 "" H 1300 6850 50  0001 C CNN
+F 3 "~" H 1300 6850 50  0001 C CNN
+	1    1300 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1450 6850 1950 6850
+Wire Wire Line
+	1300 7000 1150 7000
+Wire Wire Line
+	1150 7000 1150 6850
+Wire Wire Line
+	1300 7000 1550 7000
+Wire Wire Line
+	1550 7000 1550 6950
+Wire Wire Line
+	1550 6950 1950 6950
+Connection ~ 1300 7000
 $EndSCHEMATC
