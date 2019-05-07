@@ -89,8 +89,13 @@ Circuito recomendado
 
 
 ### Modos de funcionamiento
-El ADS8694 admite múltiples modos de operación que son programables por software. Después de encendido, el dispositivo se coloca en modo inactivo y no realiza ninguna función hasta que se recibe un comando del usuario.Más adelante se enumeran en una tabla todos los comandos para ingresar a los diferentes modos del dispositivo. Después del encendido, los registros de programa se activan con los valores predeterminados y requieren ajustes de configuración apropiados antes de realizar cualquier conversión. El siguiente diagrama explica cómo cambiar el dispositivo de un modo de operación a otro.
+El ADS8694 admite múltiples modos de operación que son programables por software. Después de encendido, el dispositivo se coloca en modo inactivo y no realiza ninguna función hasta que se recibe un comando del usuario. Más adelante se enumeran en una tabla todos los comandos para ingresar a los diferentes modos del dispositivo. Después del encendido, los registros de programa se activan con los valores predeterminados y requieren ajustes de configuración apropiados antes de realizar cualquier conversión. El siguiente diagrama explica cómo cambiar el dispositivo de un modo de operación a otro.
 
 ![Modos de operacion](https://github.com/lvillarreal/PCB_ADS8694/blob/master/images/diagrama_estado_modos.JPG)
+
+### Valores de LSB para Vref de 4.096 V
+
+![Modos de operacion](https://github.com/lvillarreal/PCB_ADS8694/blob/master/images/Valores_LSB.JPG)
+
 
 
