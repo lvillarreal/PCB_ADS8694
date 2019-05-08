@@ -1,5 +1,10 @@
 # PCB PARA ADS8694
 
+## Características del PCB
+
+
+
+
 ## Características ADS8694
 
  - 18 bits
