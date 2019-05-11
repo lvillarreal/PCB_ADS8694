@@ -2,13 +2,19 @@
 
 ## Características del PCB
 
-
+ - 4 entradas diferenciales con acondiconamiento (AD8221)
+ - Entrada canal 0 sin filtro RC
+ - Entradas canales 1-3 con filtro RC, LP 
+ - 2 pines para modo Daisy-Chain
+ - Salida compatible con Pmod (6x6, 2.54mm, 90º) de Xilinx
+ - Uso de referencia interna de AD
 
 
 ## Características ADS8694
 
  - 18 bits
  - 500 kSPS
+ - Filtro Pasa bajos incorporado internamente, fc=15 kHz (Oversampling)
  - Interface SPI
  - Pin de alarma
  - Impedancia de entrada: 1MΩ
