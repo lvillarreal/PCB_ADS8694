@@ -29,19 +29,19 @@ F 3 "~" H 4950 1850 50  0001 C CNN
 	1    4950 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 6150 2900 1    50   Input ~ 0
+Text GLabel 5750 3200 1    50   Input ~ 0
 AVDD
-Text GLabel 6050 2900 1    50   Input ~ 0
+Text GLabel 5650 3200 1    50   Input ~ 0
 AVDD
 $Comp
 L Analog_ADC:ADS8694 U4
 U 1 1 5CCB2EF2
-P 6150 4200
-F 0 "U4" H 6150 4250 50  0000 C CNN
-F 1 "ADS8694" H 6150 4150 50  0000 C CNN
-F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 6150 4200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 7100 5500 50  0001 C CNN
-	1    6150 4200
+P 5750 4500
+F 0 "U4" H 5750 4550 50  0000 C CNN
+F 1 "ADS8694" H 5750 4450 50  0000 C CNN
+F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 5750 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 6700 5800 50  0001 C CNN
+	1    5750 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -87,37 +87,33 @@ Wire Wire Line
 	2500 1000 2500 1050
 Text GLabel 2500 1000 2    50   Input ~ 0
 AVDD
-Text GLabel 6650 4100 2    50   Input ~ 0
+Text GLabel 6250 4400 2    50   Input ~ 0
 REFSEL
-Text GLabel 6650 4400 2    50   Input ~ 0
+Text GLabel 6250 4700 2    50   Input ~ 0
 ALARM
-Text GLabel 6650 4600 2    50   Input ~ 0
+Text GLabel 6250 4900 2    50   Input ~ 0
 REFCAP
-Text GLabel 6650 4800 2    50   Input ~ 0
+Text GLabel 6250 5100 2    50   Input ~ 0
 REFIO
-Text GLabel 6650 3900 2    50   Input ~ 0
+Text GLabel 6250 4200 2    50   Input ~ 0
 RST-PD
-Text GLabel 6650 3700 2    50   Input ~ 0
+Text GLabel 6250 4000 2    50   Input ~ 0
 DAISY
-Text GLabel 6650 3600 2    50   Input ~ 0
+Text GLabel 6250 3900 2    50   Input ~ 0
 CS
-Text GLabel 6650 3500 2    50   Input ~ 0
+Text GLabel 6250 3800 2    50   Input ~ 0
 SCLK
-Text GLabel 6650 3400 2    50   Input ~ 0
+Text GLabel 6250 3700 2    50   Input ~ 0
 SDI
-Text GLabel 6650 3300 2    50   Input ~ 0
+Text GLabel 6250 3600 2    50   Input ~ 0
 SDO
-Text GLabel 5650 5100 0    50   Input ~ 0
-DVDD
-Text GLabel 5650 5000 0    50   Input ~ 0
-DVDD
-Text GLabel 5650 3300 0    50   Input ~ 0
+Text GLabel 5250 3600 0    50   Input ~ 0
 AIN_0P
-Text GLabel 5650 3500 0    50   Input ~ 0
+Text GLabel 5250 3800 0    50   Input ~ 0
 AIN_1P
-Text GLabel 5650 3700 0    50   Input ~ 0
+Text GLabel 5250 4000 0    50   Input ~ 0
 AIN_2P
-Text GLabel 5650 3900 0    50   Input ~ 0
+Text GLabel 5250 4200 0    50   Input ~ 0
 AIN_3P
 Text GLabel 7200 800  0    50   Input ~ 0
 REFSEL
@@ -187,7 +183,7 @@ CS
 Text GLabel 5250 1650 2    50   Input ~ 0
 RST-PD
 Text Notes 4450 1350 0    50   ~ 0
-Función de pines Pmod:\n1: SCLK\n2: SDI -> Se conecta con SDO de AD8694\n3: SDO -> Se conecta con SDI de AD8694\n4: /CS (Activo por bajo)\n7: /RST-/PD (Activo por bajo)\n8: ALARM (Entrada; activo por alto)
+COMUNICACIÓN SPI\nFunción de pines Pmod:\n1: SCLK\n2: SDI -> Se conecta con SDO de AD8694\n3: SDO -> Se conecta con SDI de AD8694\n4: /CS (Activo por bajo)\n7: /RST-/PD (Activo por bajo)\n8: ALARM (Entrada; activo por alto)
 Text GLabel 5250 1750 2    50   Input ~ 0
 ALARM
 Text GLabel 9650 1100 3    50   Input ~ 0
@@ -203,29 +199,10 @@ F 3 "~" H 9650 950 50  0001 C CNN
 	1    9650 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Male J5
-U 1 1 5CCBC2E6
-P 10100 950
-F 0 "J5" H 10072 882 50  0000 R CNN
-F 1 "Conn_01x01_Male" H 10072 973 50  0000 R CNN
-F 2 "" H 10100 950 50  0001 C CNN
-F 3 "~" H 10100 950 50  0001 C CNN
-	1    10100 950 
-	-1   0    0    1   
-$EndComp
-Text Notes 8950 1500 0    50   ~ 0
+Text Notes 8950 1600 0    50   ~ 0
 JUMPER PARA SELECCIONAR MODO DAISY-CHAIN
 Wire Notes Line
 	6650 650  6650 2600
-Wire Notes Line
-	8750 650  8750 1600
-Wire Notes Line
-	8750 1600 10900 1600
-Wire Notes Line
-	10900 1600 10900 650 
-Wire Notes Line
-	10900 650  8750 650 
 Wire Notes Line
 	4150 2450 6200 2450
 Wire Notes Line
@@ -235,7 +212,7 @@ Wire Notes Line
 Wire Notes Line
 	4150 650  4150 2450
 Text Notes 1350 3050 0    50   ~ 0
-BATERIA O FUENTE DE CC EXTERNA, +-VCC
+FUENTE DE CC EXTERNA, +-VCC
 Wire Notes Line
 	8050 2600 8050 650 
 Wire Notes Line
@@ -245,18 +222,18 @@ Wire Notes Line
 $Comp
 L power:GNDA #PWR0101
 U 1 1 5CD19055
-P 6900 5300
-F 0 "#PWR0101" H 6900 5050 50  0001 C CNN
-F 1 "GNDA" H 6905 5127 50  0000 C CNN
-F 2 "" H 6900 5300 50  0001 C CNN
-F 3 "" H 6900 5300 50  0001 C CNN
-	1    6900 5300
+P 6500 5600
+F 0 "#PWR0101" H 6500 5350 50  0001 C CNN
+F 1 "GNDA" H 6505 5427 50  0000 C CNN
+F 2 "" H 6500 5600 50  0001 C CNN
+F 3 "" H 6500 5600 50  0001 C CNN
+	1    6500 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 5300 6900 5100
+	6500 5600 6500 5400
 Wire Wire Line
-	6900 5100 6650 5100
+	6500 5400 6250 5400
 $Comp
 L power:GNDA #PWR0102
 U 1 1 5CD1A031
@@ -320,12 +297,12 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR0106
 U 1 1 5CD1BBE5
-P 6050 5500
-F 0 "#PWR0106" H 6050 5250 50  0001 C CNN
-F 1 "GNDA" H 6055 5327 50  0000 C CNN
-F 2 "" H 6050 5500 50  0001 C CNN
-F 3 "" H 6050 5500 50  0001 C CNN
-	1    6050 5500
+P 5650 5800
+F 0 "#PWR0106" H 5650 5550 50  0001 C CNN
+F 1 "GNDA" H 5655 5627 50  0000 C CNN
+F 2 "" H 5650 5800 50  0001 C CNN
+F 3 "" H 5650 5800 50  0001 C CNN
+	1    5650 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -377,7 +354,7 @@ L Connector:Conn_01x03_Male J1
 U 1 1 5CD245F0
 P 1550 2300
 F 0 "J1" H 1450 2300 50  0000 C CNN
-F 1 "Conn_01x03_Male_Alimentación_analógica_externa_(+-12V)" H 2200 2550 50  0000 C CNN
+F 1 "Conn_01x03_Male_Alimentación_analógica_externa_(+-VCC)" H 2200 2550 50  0000 C CNN
 F 2 "" H 1550 2300 50  0001 C CNN
 F 3 "~" H 1550 2300 50  0001 C CNN
 	1    1550 2300
@@ -394,40 +371,40 @@ Wire Notes Line
 $Comp
 L power:GNDA #PWR0113
 U 1 1 5CD2ABA2
-P 5000 4200
-F 0 "#PWR0113" H 5000 3950 50  0001 C CNN
-F 1 "GNDA" H 5005 4027 50  0000 C CNN
-F 2 "" H 5000 4200 50  0001 C CNN
-F 3 "" H 5000 4200 50  0001 C CNN
-	1    5000 4200
+P 4600 4500
+F 0 "#PWR0113" H 4600 4250 50  0001 C CNN
+F 1 "GNDA" H 4605 4327 50  0000 C CNN
+F 2 "" H 4600 4500 50  0001 C CNN
+F 3 "" H 4600 4500 50  0001 C CNN
+	1    4600 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 4000 5000 4200
+	4600 4300 4600 4500
 Wire Wire Line
-	5000 4000 5650 4000
+	4600 4300 5250 4300
 Wire Wire Line
-	5650 3800 5000 3800
+	5250 4100 4600 4100
 Wire Wire Line
-	5000 3800 5000 4000
-Connection ~ 5000 4000
+	4600 4100 4600 4300
+Connection ~ 4600 4300
 Wire Wire Line
-	5650 3600 5000 3600
+	5250 3900 4600 3900
 Wire Wire Line
-	5000 3600 5000 3800
-Connection ~ 5000 3800
+	4600 3900 4600 4100
+Connection ~ 4600 4100
 Wire Wire Line
-	5650 3400 5000 3400
+	5250 3700 4600 3700
 Wire Wire Line
-	5000 3400 5000 3600
-Connection ~ 5000 3600
-Text GLabel 1650 3550 2    50   Input ~ 0
+	4600 3700 4600 3900
+Connection ~ 4600 3900
+Text GLabel 1650 3700 2    50   Input ~ 0
 AIN_3-
-Text GLabel 1650 3650 2    50   Input ~ 0
+Text GLabel 1650 3800 2    50   Input ~ 0
 AIN_3+
-Text GLabel 1650 3750 2    50   Input ~ 0
+Text GLabel 1650 3900 2    50   Input ~ 0
 AIN_2-
-Text GLabel 1650 3850 2    50   Input ~ 0
+Text GLabel 1650 4000 2    50   Input ~ 0
 AIN_2+
 $Comp
 L Device:C C4
@@ -485,69 +462,9 @@ Wire Notes Line
 	3400 1950 3400 3150
 Wire Notes Line
 	950  1950 950  3150
-$Comp
-L Amplifier_Instrumentation:AD8221 U3
-U 1 1 5CD5D7D9
-P 10050 3600
-F 0 "U3" H 10050 3997 60  0000 C CNN
-F 1 "AD8221" H 10050 3891 60  0000 C CNN
-F 2 "" H 10050 3600 50  0001 C CNN
-F 3 "" H 10050 3600 50  0001 C CNN
-	1    10050 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 10550 3450 2    50   Input ~ 0
-+VCC
-Text GLabel 10550 3750 2    50   Input ~ 0
--VCC
-$Comp
-L power:GNDA #PWR0117
-U 1 1 5CD5D7E1
-P 10950 3750
-F 0 "#PWR0117" H 10950 3500 50  0001 C CNN
-F 1 "GNDA" H 10955 3577 50  0000 C CNN
-F 2 "" H 10950 3750 50  0001 C CNN
-F 3 "" H 10950 3750 50  0001 C CNN
-	1    10950 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 3750 10950 3650
-Wire Wire Line
-	10950 3650 10550 3650
-Text GLabel 10550 3550 2    50   Input ~ 0
-AIN_1P
-Text GLabel 9550 3750 0    50   Input ~ 0
-AIN_1+
-Text GLabel 9550 3450 0    50   Input ~ 0
-AIN_1-
-$Comp
-L Device:R_POT_TRIM_US RV1
-U 1 1 5CD62710
-P 8900 3550
-F 0 "RV1" V 8695 3550 50  0000 C CNN
-F 1 "R_POT_TRIM_US_100k" V 8800 3450 50  0000 C CNN
-F 2 "" H 8900 3550 50  0001 C CNN
-F 3 "~" H 8900 3550 50  0001 C CNN
-	1    8900 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9050 3550 9550 3550
-Wire Wire Line
-	8900 3700 8750 3700
-Wire Wire Line
-	8750 3700 8750 3550
-Wire Wire Line
-	8900 3700 9150 3700
-Wire Wire Line
-	9150 3700 9150 3650
-Wire Wire Line
-	9150 3650 9550 3650
-Connection ~ 8900 3700
 NoConn ~ 5250 1850
 NoConn ~ 5250 1950
-Text GLabel 6250 2900 1    50   Input ~ 0
+Text GLabel 5850 3200 1    50   Input ~ 0
 DVDD
 $Comp
 L power:GNDD #PWR0111
@@ -582,12 +499,12 @@ Wire Wire Line
 $Comp
 L power:GNDD #PWR0119
 U 1 1 5CD863F9
-P 6250 5500
-F 0 "#PWR0119" H 6250 5250 50  0001 C CNN
-F 1 "GNDD" H 6254 5345 50  0000 C CNN
-F 2 "" H 6250 5500 50  0001 C CNN
-F 3 "" H 6250 5500 50  0001 C CNN
-	1    6250 5500
+P 5850 5800
+F 0 "#PWR0119" H 5850 5550 50  0001 C CNN
+F 1 "GNDD" H 5854 5645 50  0000 C CNN
+F 2 "" H 5850 5800 50  0001 C CNN
+F 3 "" H 5850 5800 50  0001 C CNN
+	1    5850 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -606,212 +523,454 @@ Wire Wire Line
 Wire Wire Line
 	9250 950  9400 950 
 $Comp
-L Amplifier_Instrumentation:AD8221 U?
-U 1 1 5CDA0B2C
-P 10050 4500
-F 0 "U?" H 10050 4897 60  0000 C CNN
-F 1 "AD8221" H 10050 4791 60  0000 C CNN
-F 2 "" H 10050 4500 50  0001 C CNN
-F 3 "" H 10050 4500 50  0001 C CNN
-	1    10050 4500
-	1    0    0    -1  
-$EndComp
-Text GLabel 10550 4350 2    50   Input ~ 0
-+VCC
-Text GLabel 10550 4650 2    50   Input ~ 0
--VCC
-$Comp
-L power:GNDA #PWR?
-U 1 1 5CDA0B34
-P 10950 4650
-F 0 "#PWR?" H 10950 4400 50  0001 C CNN
-F 1 "GNDA" H 10955 4477 50  0000 C CNN
-F 2 "" H 10950 4650 50  0001 C CNN
-F 3 "" H 10950 4650 50  0001 C CNN
-	1    10950 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 4650 10950 4550
-Wire Wire Line
-	10950 4550 10550 4550
-Text GLabel 10550 4450 2    50   Input ~ 0
-AIN_2P
-Text GLabel 9550 4650 0    50   Input ~ 0
-AIN_2+
-Text GLabel 9550 4350 0    50   Input ~ 0
-AIN_2-
-$Comp
-L Device:R_POT_TRIM_US RV?
-U 1 1 5CDA0B40
-P 8900 4450
-F 0 "RV?" V 8695 4450 50  0000 C CNN
-F 1 "R_POT_TRIM_US_100k" V 8800 4350 50  0000 C CNN
-F 2 "" H 8900 4450 50  0001 C CNN
-F 3 "~" H 8900 4450 50  0001 C CNN
-	1    8900 4450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9050 4450 9550 4450
-Wire Wire Line
-	8900 4600 8750 4600
-Wire Wire Line
-	8750 4600 8750 4450
-Wire Wire Line
-	8900 4600 9150 4600
-Wire Wire Line
-	9150 4600 9150 4550
-Wire Wire Line
-	9150 4550 9550 4550
-Connection ~ 8900 4600
-$Comp
-L Amplifier_Instrumentation:AD8221 U?
-U 1 1 5CDA9EE8
-P 10050 5400
-F 0 "U?" H 10050 5797 60  0000 C CNN
-F 1 "AD8221" H 10050 5691 60  0000 C CNN
-F 2 "" H 10050 5400 50  0001 C CNN
-F 3 "" H 10050 5400 50  0001 C CNN
-	1    10050 5400
-	1    0    0    -1  
-$EndComp
-Text GLabel 10550 5250 2    50   Input ~ 0
-+VCC
-Text GLabel 10550 5550 2    50   Input ~ 0
--VCC
-$Comp
-L power:GNDA #PWR?
-U 1 1 5CDA9EF0
-P 10950 5550
-F 0 "#PWR?" H 10950 5300 50  0001 C CNN
-F 1 "GNDA" H 10955 5377 50  0000 C CNN
-F 2 "" H 10950 5550 50  0001 C CNN
-F 3 "" H 10950 5550 50  0001 C CNN
-	1    10950 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10950 5550 10950 5450
-Wire Wire Line
-	10950 5450 10550 5450
-Text GLabel 10550 5350 2    50   Input ~ 0
-AIN_3P
-Text GLabel 9550 5550 0    50   Input ~ 0
-AIN_3+
-Text GLabel 9550 5250 0    50   Input ~ 0
-AIN_3-
-$Comp
-L Device:R_POT_TRIM_US RV?
-U 1 1 5CDA9EFC
-P 8900 5350
-F 0 "RV?" V 8695 5350 50  0000 C CNN
-F 1 "R_POT_TRIM_US_100k" V 8800 5250 50  0000 C CNN
-F 2 "" H 8900 5350 50  0001 C CNN
-F 3 "~" H 8900 5350 50  0001 C CNN
-	1    8900 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9050 5350 9550 5350
-Wire Wire Line
-	8900 5500 8750 5500
-Wire Wire Line
-	8750 5500 8750 5350
-Wire Wire Line
-	8900 5500 9150 5500
-Wire Wire Line
-	9150 5500 9150 5450
-Wire Wire Line
-	9150 5450 9550 5450
-Connection ~ 8900 5500
-$Comp
-L Amplifier_Instrumentation:AD8221 U?
+L Amplifier_Instrumentation:AD8221 U6
 U 1 1 5CDB25B2
-P 10000 2450
-F 0 "U?" H 10000 2847 60  0000 C CNN
-F 1 "AD8221" H 10000 2741 60  0000 C CNN
-F 2 "" H 10000 2450 50  0001 C CNN
-F 3 "" H 10000 2450 50  0001 C CNN
-	1    10000 2450
+P 9600 3875
+F 0 "U6" H 9600 4272 60  0000 C CNN
+F 1 "AD8221" H 9600 4166 60  0000 C CNN
+F 2 "" H 9600 3875 50  0001 C CNN
+F 3 "" H 9600 3875 50  0001 C CNN
+	1    9600 3875
 	1    0    0    -1  
 $EndComp
-Text GLabel 10500 2300 2    50   Input ~ 0
+Text GLabel 10100 3725 2    50   Input ~ 0
 +VCC
-Text GLabel 10500 2600 2    50   Input ~ 0
+Text GLabel 10100 4025 2    50   Input ~ 0
 -VCC
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR08
 U 1 1 5CDB25BA
-P 10900 2600
-F 0 "#PWR?" H 10900 2350 50  0001 C CNN
-F 1 "GNDA" H 10905 2427 50  0000 C CNN
-F 2 "" H 10900 2600 50  0001 C CNN
-F 3 "" H 10900 2600 50  0001 C CNN
-	1    10900 2600
+P 10500 4025
+F 0 "#PWR08" H 10500 3775 50  0001 C CNN
+F 1 "GNDA" H 10505 3852 50  0000 C CNN
+F 2 "" H 10500 4025 50  0001 C CNN
+F 3 "" H 10500 4025 50  0001 C CNN
+	1    10500 4025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10900 2600 10900 2500
+	10500 4025 10500 3925
 Wire Wire Line
-	10900 2500 10500 2500
-Text GLabel 10500 2400 2    50   Input ~ 0
+	10500 3925 10100 3925
+Text GLabel 10100 3825 2    50   Input ~ 0
 AIN_0P
-Text GLabel 9500 2600 0    50   Input ~ 0
+Text GLabel 9100 4025 0    50   Input ~ 0
 AIN_0+
-Text GLabel 9500 2300 0    50   Input ~ 0
+Text GLabel 9100 3725 0    50   Input ~ 0
 AIN_0-
-Text Notes 9250 3100 0    50   ~ 0
-ACONDICIONAMIENTO, CANAL DIFERENCIAL 0\nGANANCIA VARIABLE, TRIMMER 100k\n\n
 $Comp
-L Device:R_POT_TRIM_US RV?
+L Device:R_POT_TRIM_US RV4
 U 1 1 5CDB25C6
-P 8850 2400
-F 0 "RV?" V 8645 2400 50  0000 C CNN
-F 1 "R_POT_TRIM_US_100k" V 8750 2300 50  0000 C CNN
-F 2 "" H 8850 2400 50  0001 C CNN
-F 3 "~" H 8850 2400 50  0001 C CNN
-	1    8850 2400
+P 8450 3825
+F 0 "RV4" V 8245 3825 50  0000 C CNN
+F 1 "R_POT_TRIM_US_100k" V 8350 3725 50  0000 C CNN
+F 2 "" H 8450 3825 50  0001 C CNN
+F 3 "~" H 8450 3825 50  0001 C CNN
+	1    8450 3825
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9000 2400 9500 2400
+	8600 3825 9100 3825
 Wire Wire Line
-	8850 2550 8700 2550
+	8450 3975 8300 3975
 Wire Wire Line
-	8700 2550 8700 2400
+	8300 3975 8300 3825
 Wire Wire Line
-	8850 2550 9100 2550
+	8450 3975 8700 3975
 Wire Wire Line
-	9100 2550 9100 2500
+	8700 3975 8700 3925
 Wire Wire Line
-	9100 2500 9500 2500
-Connection ~ 8850 2550
+	8700 3925 9100 3925
+Connection ~ 8450 3975
+Text GLabel 1650 4100 2    50   Input ~ 0
+AIN_1-
+Text GLabel 1650 4200 2    50   Input ~ 0
+AIN_1+
+Text GLabel 1650 4300 2    50   Input ~ 0
+AIN_0-
+Text GLabel 1650 4400 2    50   Input ~ 0
+AIN_0+
+Wire Wire Line
+	2750 7000 3200 7000
+Wire Wire Line
+	2750 6100 3200 6100
+Wire Wire Line
+	3200 5200 2750 5200
 $Comp
-L Connector:Conn_01x08_Female J?
-U 1 1 5CDBBE1A
-P 1450 3950
-F 0 "J?" H 1342 3325 50  0000 C CNN
-F 1 "Conn_01x08_Female_Entradas" H 1342 3416 50  0000 C CNN
-F 2 "" H 1450 3950 50  0001 C CNN
-F 3 "~" H 1450 3950 50  0001 C CNN
-	1    1450 3950
+L power:GNDA #PWR06
+U 1 1 5CD55CB0
+P 3500 7300
+F 0 "#PWR06" H 3500 7050 50  0001 C CNN
+F 1 "GNDA" H 3505 7127 50  0000 C CNN
+F 2 "" H 3500 7300 50  0001 C CNN
+F 3 "" H 3500 7300 50  0001 C CNN
+	1    3500 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR05
+U 1 1 5CD556BA
+P 3500 6400
+F 0 "#PWR05" H 3500 6150 50  0001 C CNN
+F 1 "GNDA" H 3505 6227 50  0000 C CNN
+F 2 "" H 3500 6400 50  0001 C CNN
+F 3 "" H 3500 6400 50  0001 C CNN
+	1    3500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR04
+U 1 1 5CD55427
+P 3500 5500
+F 0 "#PWR04" H 3500 5250 50  0001 C CNN
+F 1 "GNDA" H 3505 5327 50  0000 C CNN
+F 2 "" H 3500 5500 50  0001 C CNN
+F 3 "" H 3500 5500 50  0001 C CNN
+	1    3500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5CD54BBC
+P 3500 7150
+F 0 "C10" H 3615 7196 50  0000 L CNN
+F 1 "C" H 3615 7105 50  0000 L CNN
+F 2 "" H 3538 7000 50  0001 C CNN
+F 3 "~" H 3500 7150 50  0001 C CNN
+	1    3500 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5CD54889
+P 3500 5350
+F 0 "C8" H 3615 5396 50  0000 L CNN
+F 1 "C" H 3615 5305 50  0000 L CNN
+F 2 "" H 3538 5200 50  0001 C CNN
+F 3 "~" H 3500 5350 50  0001 C CNN
+	1    3500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5CD53D7A
+P 3500 6250
+F 0 "C9" H 3615 6296 50  0000 L CNN
+F 1 "C" H 3615 6205 50  0000 L CNN
+F 2 "" H 3538 6100 50  0001 C CNN
+F 3 "~" H 3500 6250 50  0001 C CNN
+	1    3500 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CD530A8
+P 3350 7000
+F 0 "R3" V 3143 7000 50  0000 C CNN
+F 1 "R" V 3234 7000 50  0000 C CNN
+F 2 "" V 3280 7000 50  0001 C CNN
+F 3 "~" H 3350 7000 50  0001 C CNN
+	1    3350 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CD52913
+P 3350 6100
+F 0 "R2" V 3143 6100 50  0000 C CNN
+F 1 "R" V 3234 6100 50  0000 C CNN
+F 2 "" V 3280 6100 50  0001 C CNN
+F 3 "~" H 3350 6100 50  0001 C CNN
+	1    3350 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CD511D6
+P 3350 5200
+F 0 "R1" V 3143 5200 50  0000 C CNN
+F 1 "R" V 3234 5200 50  0000 C CNN
+F 2 "" V 3280 5200 50  0001 C CNN
+F 3 "~" H 3350 5200 50  0001 C CNN
+	1    3350 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Instrumentation:AD8221 U3
+U 1 1 5CD5D7D9
+P 2250 5250
+F 0 "U3" H 2250 5647 60  0000 C CNN
+F 1 "AD8221" H 2250 5541 60  0000 C CNN
+F 2 "" H 2250 5250 50  0001 C CNN
+F 3 "" H 2250 5250 50  0001 C CNN
+	1    2250 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 7150
+Wire Wire Line
+	1350 7100 1750 7100
+Wire Wire Line
+	1350 7150 1350 7100
+Wire Wire Line
+	1100 7150 1350 7150
+Wire Wire Line
+	950  7150 950  7000
+Wire Wire Line
+	1100 7150 950  7150
+Wire Wire Line
+	1250 7000 1750 7000
+$Comp
+L Device:R_POT_TRIM_US RV3
+U 1 1 5CDA9EFC
+P 1100 7000
+F 0 "RV3" V 895 7000 50  0000 C CNN
+F 1 "R_POT_TRIM_US" V 1000 6900 50  0000 C CNN
+F 2 "" H 1100 7000 50  0001 C CNN
+F 3 "~" H 1100 7000 50  0001 C CNN
+	1    1100 7000
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 6900 0    50   Input ~ 0
+AIN_3-
+Text GLabel 1750 7200 0    50   Input ~ 0
+AIN_3+
+Text GLabel 3500 7000 2    50   Input ~ 0
+AIN_3P
+Wire Wire Line
+	3150 7100 2750 7100
+Wire Wire Line
+	3150 7200 3150 7100
+$Comp
+L power:GNDA #PWR03
+U 1 1 5CDA9EF0
+P 3150 7200
+F 0 "#PWR03" H 3150 6950 50  0001 C CNN
+F 1 "GNDA" H 3155 7027 50  0000 C CNN
+F 2 "" H 3150 7200 50  0001 C CNN
+F 3 "" H 3150 7200 50  0001 C CNN
+	1    3150 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 7200 2    50   Input ~ 0
+-VCC
+Text GLabel 2750 6900 2    50   Input ~ 0
++VCC
+$Comp
+L Amplifier_Instrumentation:AD8221 U5
+U 1 1 5CDA9EE8
+P 2250 7050
+F 0 "U5" H 2250 7447 60  0000 C CNN
+F 1 "AD8221" H 2250 7341 60  0000 C CNN
+F 2 "" H 2250 7050 50  0001 C CNN
+F 3 "" H 2250 7050 50  0001 C CNN
+	1    2250 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 6250
+Wire Wire Line
+	1350 6200 1750 6200
+Wire Wire Line
+	1350 6250 1350 6200
+Wire Wire Line
+	1100 6250 1350 6250
+Wire Wire Line
+	950  6250 950  6100
+Wire Wire Line
+	1100 6250 950  6250
+Wire Wire Line
+	1250 6100 1750 6100
+$Comp
+L Device:R_POT_TRIM_US RV2
+U 1 1 5CDA0B40
+P 1100 6100
+F 0 "RV2" V 895 6100 50  0000 C CNN
+F 1 "R_POT_TRIM_US" V 1000 6000 50  0000 C CNN
+F 2 "" H 1100 6100 50  0001 C CNN
+F 3 "~" H 1100 6100 50  0001 C CNN
+	1    1100 6100
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 6000 0    50   Input ~ 0
+AIN_2-
+Text GLabel 1750 6300 0    50   Input ~ 0
+AIN_2+
+Text GLabel 3500 6100 2    50   Input ~ 0
+AIN_2P
+Wire Wire Line
+	3150 6200 2750 6200
+Wire Wire Line
+	3150 6300 3150 6200
+$Comp
+L power:GNDA #PWR02
+U 1 1 5CDA0B34
+P 3150 6300
+F 0 "#PWR02" H 3150 6050 50  0001 C CNN
+F 1 "GNDA" H 3155 6127 50  0000 C CNN
+F 2 "" H 3150 6300 50  0001 C CNN
+F 3 "" H 3150 6300 50  0001 C CNN
+	1    3150 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 6300 2    50   Input ~ 0
+-VCC
+Text GLabel 2750 6000 2    50   Input ~ 0
++VCC
+$Comp
+L Amplifier_Instrumentation:AD8221 U2
+U 1 1 5CDA0B2C
+P 2250 6150
+F 0 "U2" H 2250 6547 60  0000 C CNN
+F 1 "AD8221" H 2250 6441 60  0000 C CNN
+F 2 "" H 2250 6150 50  0001 C CNN
+F 3 "" H 2250 6150 50  0001 C CNN
+	1    2250 6150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 5350
+Wire Wire Line
+	1350 5300 1750 5300
+Wire Wire Line
+	1350 5350 1350 5300
+Wire Wire Line
+	1100 5350 1350 5350
+Wire Wire Line
+	950  5350 950  5200
+Wire Wire Line
+	1100 5350 950  5350
+Wire Wire Line
+	1250 5200 1750 5200
+$Comp
+L Device:R_POT_TRIM_US RV1
+U 1 1 5CD62710
+P 1100 5200
+F 0 "RV1" V 895 5200 50  0000 C CNN
+F 1 "R_POT_TRIM_US" V 1000 5100 50  0000 C CNN
+F 2 "" H 1100 5200 50  0001 C CNN
+F 3 "~" H 1100 5200 50  0001 C CNN
+	1    1100 5200
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 5100 0    50   Input ~ 0
+AIN_1-
+Text GLabel 1750 5400 0    50   Input ~ 0
+AIN_1+
+Text GLabel 3500 5200 2    50   Input ~ 0
+AIN_1P
+Wire Wire Line
+	3150 5300 2750 5300
+Wire Wire Line
+	3150 5400 3150 5300
+$Comp
+L power:GNDA #PWR0117
+U 1 1 5CD5D7E1
+P 3150 5400
+F 0 "#PWR0117" H 3150 5150 50  0001 C CNN
+F 1 "GNDA" H 3155 5227 50  0000 C CNN
+F 2 "" H 3150 5400 50  0001 C CNN
+F 3 "" H 3150 5400 50  0001 C CNN
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 5400 2    50   Input ~ 0
+-VCC
+Text GLabel 2750 5100 2    50   Input ~ 0
++VCC
+$Comp
+L Connector:Conn_01x10_Female J2
+U 1 1 5CD7A7C7
+P 1450 4000
+F 0 "J2" H 1600 4000 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 1342 3366 50  0000 C CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "~" H 1450 4000 50  0001 C CNN
+	1    1450 4000
 	-1   0    0    1   
 $EndComp
-Text GLabel 1650 3950 2    50   Input ~ 0
-AIN_1-
-Text GLabel 1650 4050 2    50   Input ~ 0
-AIN_1+
-Text GLabel 1650 4150 2    50   Input ~ 0
-AIN_0-
-Text GLabel 1650 4250 2    50   Input ~ 0
-AIN_0+
+Text GLabel 5250 5300 0    50   Input ~ 0
+AUX_IN
+$Comp
+L power:GNDA #PWR07
+U 1 1 5CD7F688
+P 5050 5500
+F 0 "#PWR07" H 5050 5250 50  0001 C CNN
+F 1 "GNDA" H 5055 5327 50  0000 C CNN
+F 2 "" H 5050 5500 50  0001 C CNN
+F 3 "" H 5050 5500 50  0001 C CNN
+	1    5050 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5500 5050 5400
+Wire Wire Line
+	5050 5400 5250 5400
+$Comp
+L power:GNDA #PWR01
+U 1 1 5CD81712
+P 2100 3500
+F 0 "#PWR01" H 2100 3250 50  0001 C CNN
+F 1 "GNDA" H 2105 3327 50  0000 C CNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "" H 2100 3500 50  0001 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 3600 2    50   Input ~ 0
+AUX_IN
+Wire Wire Line
+	1650 3500 2100 3500
 Wire Notes Line
-	950  4350 2200 4350
+	950  4550 2350 4550
 Wire Notes Line
-	2200 4350 2200 3250
+	2350 3250 2350 4550
 Wire Notes Line
-	2200 3250 950  3250
+	950  3250 2350 3250
 Wire Notes Line
-	950  3250 950  4350
+	950  3250 950  4550
+Wire Notes Line
+	600  7750 4000 7750
+Wire Notes Line
+	4000 7750 4000 4700
+Wire Notes Line
+	4000 4700 600  4700
+Wire Notes Line
+	600  4700 600  7750
+Text Notes 1400 7650 0    50   ~ 0
+ACONDICIONAMIENTO CON FILTRO PASA BAJO RC
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5CD63433
+P 10450 1050
+F 0 "J?" H 10422 932 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10800 800 50  0000 R CNN
+F 2 "" H 10450 1050 50  0001 C CNN
+F 3 "~" H 10450 1050 50  0001 C CNN
+	1    10450 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9900 950  10250 950 
+Text GLabel 10250 1050 0    50   Input ~ 0
+SDO
+Text Notes 10550 975  0    50   ~ 0
+PIN DAISY
+Text Notes 10550 1075 0    50   ~ 0
+PIN SDO\n
+Wire Notes Line
+	8750 650  8750 1700
+Wire Notes Line
+	11025 650  11025 1700
+Wire Notes Line
+	8750 650  11025 650 
+Wire Notes Line
+	8750 1700 11025 1700
+Text Notes 8475 4475 0    50   ~ 0
+ENTRADA CON ACONDICIONAMIENTO SIN FILTRO RC
+Wire Notes Line
+	7800 4600 10800 4600
+Wire Notes Line
+	10800 4600 10800 3300
+Wire Notes Line
+	10800 3300 7800 3300
+Wire Notes Line
+	7800 3300 7800 4600
 $EndSCHEMATC
