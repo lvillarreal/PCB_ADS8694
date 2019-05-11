@@ -398,13 +398,13 @@ Wire Wire Line
 Wire Wire Line
 	4600 3700 4600 3900
 Connection ~ 4600 3900
-Text GLabel 1650 3700 2    50   Input ~ 0
+Text GLabel 1650 3650 2    50   Input ~ 0
 AIN_3-
-Text GLabel 1650 3800 2    50   Input ~ 0
+Text GLabel 1650 3750 2    50   Input ~ 0
 AIN_3+
-Text GLabel 1650 3900 2    50   Input ~ 0
+Text GLabel 1650 3850 2    50   Input ~ 0
 AIN_2-
-Text GLabel 1650 4000 2    50   Input ~ 0
+Text GLabel 1650 3950 2    50   Input ~ 0
 AIN_2+
 $Comp
 L Device:C C4
@@ -582,13 +582,13 @@ Wire Wire Line
 Wire Wire Line
 	8700 3925 9100 3925
 Connection ~ 8450 3975
-Text GLabel 1650 4100 2    50   Input ~ 0
+Text GLabel 1650 4050 2    50   Input ~ 0
 AIN_1-
-Text GLabel 1650 4200 2    50   Input ~ 0
+Text GLabel 1650 4150 2    50   Input ~ 0
 AIN_1+
-Text GLabel 1650 4300 2    50   Input ~ 0
+Text GLabel 1650 4250 2    50   Input ~ 0
 AIN_0-
-Text GLabel 1650 4400 2    50   Input ~ 0
+Text GLabel 1650 4350 2    50   Input ~ 0
 AIN_0+
 Wire Wire Line
 	2750 7000 3200 7000
@@ -878,12 +878,12 @@ Text GLabel 2750 5100 2    50   Input ~ 0
 $Comp
 L Connector:Conn_01x10_Female J2
 U 1 1 5CD7A7C7
-P 1450 4000
-F 0 "J2" H 1600 4000 50  0000 C CNN
-F 1 "Conn_01x10_Female" H 1342 3366 50  0000 C CNN
-F 2 "" H 1450 4000 50  0001 C CNN
-F 3 "~" H 1450 4000 50  0001 C CNN
-	1    1450 4000
+P 1450 3950
+F 0 "J2" H 1600 3950 50  0000 C CNN
+F 1 "Conn_01x10_Female" H 1342 3316 50  0000 C CNN
+F 2 "" H 1450 3950 50  0001 C CNN
+F 3 "~" H 1450 3950 50  0001 C CNN
+	1    1450 3950
 	-1   0    0    1   
 $EndComp
 Text GLabel 5250 5300 0    50   Input ~ 0
@@ -906,18 +906,18 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR01
 U 1 1 5CD81712
-P 2100 3500
-F 0 "#PWR01" H 2100 3250 50  0001 C CNN
-F 1 "GNDA" H 2105 3327 50  0000 C CNN
-F 2 "" H 2100 3500 50  0001 C CNN
-F 3 "" H 2100 3500 50  0001 C CNN
-	1    2100 3500
+P 2100 3450
+F 0 "#PWR01" H 2100 3200 50  0001 C CNN
+F 1 "GNDA" H 2105 3277 50  0000 C CNN
+F 2 "" H 2100 3450 50  0001 C CNN
+F 3 "" H 2100 3450 50  0001 C CNN
+	1    2100 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 3600 2    50   Input ~ 0
+Text GLabel 1650 3550 2    50   Input ~ 0
 AUX_IN
 Wire Wire Line
-	1650 3500 2100 3500
+	1650 3450 2100 3450
 Wire Notes Line
 	950  4550 2350 4550
 Wire Notes Line
@@ -973,4 +973,6 @@ Wire Notes Line
 	10800 3300 7800 3300
 Wire Notes Line
 	7800 3300 7800 4600
+Text Notes 1500 4500 0    50   ~ 0
+ENTRADAS
 $EndSCHEMATC
