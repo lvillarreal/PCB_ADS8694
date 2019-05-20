@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADS8694_Vers2
+D 18-Bit, 500-kSPS, 4-Channels, Single-Supply, SAR ADC with Bipolar Input Range, TSSOP-38
+K ADC analog digital spi bipolar input
+F http://www.ti.com/lit/ds/symlink/ads8694.pdf
+$ENDCMP
+#
+#End Doc Library

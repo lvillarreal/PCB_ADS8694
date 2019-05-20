@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PCB_ADS8694-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -23,17 +22,6 @@ F 1 "Conn_02x06_Male_Pmod_Spartan6" H 5000 2176 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 4950 1850 50  0001 C CNN
 F 3 "~" H 4950 1850 50  0001 C CNN
 	1    4950 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L PCB_ADS8694-rescue:ADS8694-Analog_ADC-PCB_ADS8694-rescue U4
-U 1 1 5CCB2EF2
-P 5750 4500
-F 0 "U4" H 5750 4550 50  0000 C CNN
-F 1 "ADS8694" H 5750 4450 50  0000 C CNN
-F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 5750 4500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 6700 5800 50  0001 C CNN
-	1    5750 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -299,12 +287,12 @@ $EndComp
 $Comp
 L power:GNDD #PWR0119
 U 1 1 5CD863F9
-P 6100 5800
-F 0 "#PWR0119" H 6100 5550 50  0001 C CNN
-F 1 "GNDD" H 6104 5645 50  0000 C CNN
-F 2 "" H 6100 5800 50  0001 C CNN
-F 3 "" H 6100 5800 50  0001 C CNN
-	1    6100 5800
+P 6050 5800
+F 0 "#PWR0119" H 6050 5550 50  0001 C CNN
+F 1 "GNDD" H 6054 5645 50  0000 C CNN
+F 2 "" H 6050 5800 50  0001 C CNN
+F 3 "" H 6050 5800 50  0001 C CNN
+	1    6050 5800
 	1    0    0    -1  
 $EndComp
 Text GLabel 9200 3425 2    50   Input ~ 0
@@ -1364,38 +1352,17 @@ F 3 "" H 3725 3400 50  0001 C CNN
 $EndComp
 Text GLabel 5750 3100 1    50   Input ~ 0
 AVDD
-Wire Wire Line
-	5650 5800 5650 5875
-Wire Wire Line
-	5450 5875 5450 5800
-Wire Wire Line
-	5550 5800 5550 5875
-Connection ~ 5550 5875
-Wire Wire Line
-	5550 5875 5450 5875
 $Comp
 L power:GNDA #PWR034
 U 1 1 5CEF30B1
-P 5650 5875
-F 0 "#PWR034" H 5650 5625 50  0001 C CNN
-F 1 "GNDA" H 5655 5702 50  0000 C CNN
-F 2 "" H 5650 5875 50  0001 C CNN
-F 3 "" H 5650 5875 50  0001 C CNN
-	1    5650 5875
+P 5600 5900
+F 0 "#PWR034" H 5600 5650 50  0001 C CNN
+F 1 "GNDA" H 5605 5727 50  0000 C CNN
+F 2 "" H 5600 5900 50  0001 C CNN
+F 3 "" H 5600 5900 50  0001 C CNN
+	1    5600 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 5800 5750 5875
-Wire Wire Line
-	5750 5875 5650 5875
-Connection ~ 5650 5875
-Wire Wire Line
-	5850 5800 5850 5875
-Wire Wire Line
-	5850 5875 5750 5875
-Connection ~ 5750 5875
-Wire Wire Line
-	5550 5875 5650 5875
 $Comp
 L Device:C C7
 U 1 1 5CEFADBB
@@ -1583,4 +1550,36 @@ Text GLabel 5250 1750 2    50   Input ~ 0
 ALARM
 Text GLabel 4750 1750 0    50   Input ~ 0
 CS
+$Comp
+L ads8694_vers2:ADS8694_Vers2 U4
+U 1 1 5CE32CBF
+P 5750 4500
+F 0 "U4" H 5750 5981 50  0000 C CNN
+F 1 "ADS8694_Vers2" H 5750 5890 50  0000 C CNN
+F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 5750 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads8694.pdf" H 6700 5800 50  0001 C CNN
+	1    5750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5800 5400 5900
+Wire Wire Line
+	5400 5900 5500 5900
+Wire Wire Line
+	5500 5800 5500 5900
+Connection ~ 5500 5900
+Wire Wire Line
+	5500 5900 5600 5900
+Wire Wire Line
+	5600 5800 5600 5900
+Connection ~ 5600 5900
+Wire Wire Line
+	5700 5800 5700 5900
+Wire Wire Line
+	5700 5900 5625 5900
+Wire Wire Line
+	5800 5800 5800 5900
+Wire Wire Line
+	5800 5900 5700 5900
+Connection ~ 5700 5900
 $EndSCHEMATC
