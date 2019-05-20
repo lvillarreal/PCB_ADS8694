@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J4
 U 1 1 5CCB59D8
-P 4950 1850
-F 0 "J4" H 5000 2267 50  0000 C CNN
-F 1 "Conn_02x06_Male_Pmod_Spartan6" H 5000 2176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 4950 1850 50  0001 C CNN
-F 3 "~" H 4950 1850 50  0001 C CNN
-	1    4950 1850
+P 5100 1175
+F 0 "J4" H 5150 1592 50  0000 C CNN
+F 1 "Conn_02x06_Male_Pmod_Spartan6" H 5150 1501 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 5100 1175 50  0001 C CNN
+F 3 "~" H 5100 1175 50  0001 C CNN
+	1    5100 1175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -65,41 +65,41 @@ Wire Wire Line
 	2300 1000 2500 1000
 Wire Wire Line
 	2500 1000 2500 1050
-Text GLabel 6250 4400 2    50   Input ~ 0
+Text GLabel 6250 4400 2    50   Input ~ 6
 REFSEL
-Text GLabel 6250 4700 2    50   Input ~ 0
+Text GLabel 6250 4700 2    50   Input ~ 6
 ALARM
-Text GLabel 6250 4900 2    50   Input ~ 0
+Text GLabel 6250 4900 2    50   Input ~ 6
 REFCAP
-Text GLabel 6250 5100 2    50   Input ~ 0
+Text GLabel 6250 5100 2    50   Input ~ 6
 REFIO
-Text GLabel 6250 4200 2    50   Input ~ 0
+Text GLabel 6250 4200 2    50   Input ~ 6
 RST-PD
-Text GLabel 6250 3900 2    50   Input ~ 0
+Text GLabel 6250 3900 2    50   Input ~ 6
 CS
-Text GLabel 6250 3800 2    50   Input ~ 0
+Text GLabel 6250 3800 2    50   Input ~ 6
 SCLK
-Text GLabel 6250 3700 2    50   Input ~ 0
+Text GLabel 6250 3700 2    50   Input ~ 6
 SDI
-Text GLabel 6250 3600 2    50   Input ~ 0
+Text GLabel 6250 3600 2    50   Input ~ 6
 SDO
-Text GLabel 5250 3800 0    50   Input ~ 0
+Text GLabel 5250 3800 0    50   Input ~ 6
 AIN_1P
-Text GLabel 5250 4000 0    50   Input ~ 0
+Text GLabel 5250 4000 0    50   Input ~ 6
 AIN_2P
-Text GLabel 5250 4200 0    50   Input ~ 0
+Text GLabel 5250 4200 0    50   Input ~ 6
 AIN_3P
-Text GLabel 7200 800  0    50   Input ~ 0
+Text GLabel 7200 800  0    50   Input ~ 6
 REFSEL
-Text GLabel 7200 1150 0    50   Input ~ 0
+Text GLabel 7200 1150 0    50   Input ~ 6
 REFIO
-Text GLabel 7200 1550 0    50   Input ~ 0
+Text GLabel 7200 1550 0    50   Input ~ 6
 REFCAP
 Wire Wire Line
 	7200 1550 7200 1950
-Text Notes 6750 2650 0    50   ~ 0
+Text Notes 6750 2650 0    50   ~ 6
 CONFIGURACIÓN PARA USAR\nREFERENCIA INTERNA 4.096 [V]\n
-Text Notes 4800 2350 0    50   ~ 0
+Text Notes 4950 1675 0    50   ~ 6
 PMOD FPGA
 Wire Notes Line
 	950  1800 2950 1800
@@ -107,27 +107,21 @@ Wire Notes Line
 	2950 1800 2950 650 
 Wire Notes Line
 	2950 650  950  650 
-Text Notes 1450 1750 0    50   ~ 0
+Text Notes 1450 1750 0    50   ~ 6
 REGULADOR DE TENSIÓN, 5V\n
-Text Notes 7450 7500 0    79   ~ 0
+Text Notes 7450 7500 0    79   ~ 6
 PCB ADC8694 
 Wire Notes Line
 	950  650  950  1800
-Text GLabel 4750 1950 0    50   Input ~ 0
+Text GLabel 4900 1275 0    50   Input ~ 6
 SCLK
-Text GLabel 4750 2150 0    50   Input ~ 0
+Text GLabel 4900 1475 0    50   Input ~ 6
 SDO
-Text GLabel 4750 1850 0    50   Input ~ 0
+Text GLabel 4900 1175 0    50   Input ~ 6
 SDI
-Text Notes 4450 1350 0    50   ~ 0
-COMUNICACIÓN SPI\nFunción de pines Pmod:\n1: SCLK\n2: SDI -> Se conecta con SDO de AD8694\n3: SDO -> Se conecta con SDI de AD8694\n4: /CS (Activo por bajo)\n7: /RST-/PD (Activo por bajo)\n8: ALARM (Entrada; activo por alto)
-Wire Notes Line
-	4150 2450 6200 2450
-Wire Notes Line
-	6200 2450 6200 650 
 Wire Notes Line
 	6200 650  4150 650 
-Text Notes 1400 2700 0    50   ~ 0
+Text Notes 1400 2700 0    50   ~ 6
 FUENTE DE CC EXTERNA, +-VCC
 Wire Notes Line
 	6650 650  8050 650 
@@ -271,17 +265,17 @@ Wire Wire Line
 Connection ~ 4600 4100
 Wire Wire Line
 	5250 3700 4600 3700
-NoConn ~ 4750 2050
-NoConn ~ 5250 1650
+NoConn ~ 4900 1375
+NoConn ~ 5400 975 
 $Comp
 L power:GNDD #PWR0118
 U 1 1 5CD843B0
-P 5525 1850
-F 0 "#PWR0118" H 5525 1600 50  0001 C CNN
-F 1 "GNDD" H 5529 1695 50  0000 C CNN
-F 2 "" H 5525 1850 50  0001 C CNN
-F 3 "" H 5525 1850 50  0001 C CNN
-	1    5525 1850
+P 5675 1175
+F 0 "#PWR0118" H 5675 925 50  0001 C CNN
+F 1 "GNDD" H 5679 1020 50  0000 C CNN
+F 2 "" H 5675 1175 50  0001 C CNN
+F 3 "" H 5675 1175 50  0001 C CNN
+	1    5675 1175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -295,11 +289,11 @@ F 3 "" H 6050 5800 50  0001 C CNN
 	1    6050 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 3425 2    50   Input ~ 0
+Text GLabel 9200 3425 2    50   Input ~ 6
 AIN_0P
-Text GLabel 8200 3625 0    50   Input ~ 0
+Text GLabel 8200 3625 0    50   Input ~ 6
 AIN_0+
-Text GLabel 8200 3325 0    50   Input ~ 0
+Text GLabel 8200 3325 0    50   Input ~ 6
 AIN_0-
 $Comp
 L Device:R_POT_TRIM_US RV4
@@ -360,9 +354,9 @@ F 3 "~" H 7675 5525 50  0001 C CNN
 	1    7675 5525
 	0    1    1    0   
 $EndComp
-Text GLabel 8325 5425 0    50   Input ~ 0
+Text GLabel 8325 5425 0    50   Input ~ 6
 AIN_3-
-Text GLabel 8325 5725 0    50   Input ~ 0
+Text GLabel 8325 5725 0    50   Input ~ 6
 AIN_3+
 Connection ~ 1125 6750
 Wire Wire Line
@@ -388,9 +382,9 @@ F 3 "~" H 1125 6600 50  0001 C CNN
 	1    1125 6600
 	0    1    1    0   
 $EndComp
-Text GLabel 1775 6500 0    50   Input ~ 0
+Text GLabel 1775 6500 0    50   Input ~ 6
 AIN_2-
-Text GLabel 1775 6800 0    50   Input ~ 0
+Text GLabel 1775 6800 0    50   Input ~ 6
 AIN_2+
 Connection ~ 1025 5175
 Wire Wire Line
@@ -416,9 +410,9 @@ F 3 "~" H 1025 5025 50  0001 C CNN
 	1    1025 5025
 	0    1    1    0   
 $EndComp
-Text GLabel 1675 4925 0    50   Input ~ 0
+Text GLabel 1675 4925 0    50   Input ~ 6
 AIN_1-
-Text GLabel 1675 5225 0    50   Input ~ 0
+Text GLabel 1675 5225 0    50   Input ~ 6
 AIN_1+
 $Comp
 L power:GNDA #PWR0117
@@ -431,30 +425,30 @@ F 3 "" H 3675 5350 50  0001 C CNN
 	1    3675 5350
 	1    0    0    -1  
 $EndComp
-Text Notes 8100 4375 0    50   ~ 0
+Text Notes 8100 4375 0    50   ~ 6
 ENTRADA CON ACONDICIONAMIENTO SIN FILTRO RC\n
-Text Notes 1275 4175 0    50   ~ 0
+Text Notes 1275 4175 0    50   ~ 6
 CONECTORES DE ENTRADA DE SEÑAL
 $Comp
 L power:VDD #PWR0112
 U 1 1 5CD79A34
-P 5250 2050
-F 0 "#PWR0112" H 5250 1900 50  0001 C CNN
-F 1 "VDD" V 5268 2177 50  0000 L CNN
-F 2 "" H 5250 2050 50  0001 C CNN
-F 3 "" H 5250 2050 50  0001 C CNN
-	1    5250 2050
+P 5400 1375
+F 0 "#PWR0112" H 5400 1225 50  0001 C CNN
+F 1 "VDD" V 5418 1502 50  0000 L CNN
+F 2 "" H 5400 1375 50  0001 C CNN
+F 3 "" H 5400 1375 50  0001 C CNN
+	1    5400 1375
 	0    1    1    0   
 $EndComp
 $Comp
 L power:VDD #PWR0116
 U 1 1 5CD7F938
-P 5250 2150
-F 0 "#PWR0116" H 5250 2000 50  0001 C CNN
-F 1 "VDD" V 5267 2278 50  0000 L CNN
-F 2 "" H 5250 2150 50  0001 C CNN
-F 3 "" H 5250 2150 50  0001 C CNN
-	1    5250 2150
+P 5400 1475
+F 0 "#PWR0116" H 5400 1325 50  0001 C CNN
+F 1 "VDD" V 5417 1603 50  0000 L CNN
+F 2 "" H 5400 1475 50  0001 C CNN
+F 3 "" H 5400 1475 50  0001 C CNN
+	1    5400 1475
 	0    1    1    0   
 $EndComp
 $Comp
@@ -534,9 +528,9 @@ F 3 "" H 5850 3100 50  0001 C CNN
 	1    5850 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 1000 2    50   Input ~ 0
+Text GLabel 2500 1000 2    50   Input ~ 6
 AVDD
-Text GLabel 5650 3100 1    50   Input ~ 0
+Text GLabel 5650 3100 1    50   Input ~ 6
 AVDD
 $Comp
 L power:VCC #PWR0121
@@ -643,7 +637,7 @@ Wire Wire Line
 Connection ~ 4600 3900
 Wire Wire Line
 	4600 3700 4600 3900
-Text GLabel 5250 3600 0    50   Input ~ 0
+Text GLabel 5250 3600 0    50   Input ~ 6
 AIN_0P
 $Comp
 L Device:C C9
@@ -700,7 +694,7 @@ F 3 "~" H 3750 5025 50  0001 C CNN
 	1    3750 5025
 	0    1    1    0   
 $EndComp
-Text GLabel 3900 5025 2    50   Input ~ 0
+Text GLabel 3900 5025 2    50   Input ~ 6
 AIN_1P
 $Comp
 L power:GNDA #PWR03
@@ -892,7 +886,7 @@ F 3 "~" H 3850 6600 50  0001 C CNN
 	1    3850 6600
 	0    1    1    0   
 $EndComp
-Text GLabel 4000 6600 2    50   Input ~ 0
+Text GLabel 4000 6600 2    50   Input ~ 6
 AIN_2P
 $Comp
 L power:GNDA #PWR06
@@ -1073,7 +1067,7 @@ F 3 "~" H 10400 5525 50  0001 C CNN
 	1    10400 5525
 	0    1    1    0   
 $EndComp
-Text GLabel 10550 5525 2    50   Input ~ 0
+Text GLabel 10550 5525 2    50   Input ~ 6
 AIN_3P
 $Comp
 L power:GNDA #PWR022
@@ -1350,7 +1344,7 @@ F 3 "" H 3725 3400 50  0001 C CNN
 	1    3725 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 3100 1    50   Input ~ 0
+Text GLabel 5750 3100 1    50   Input ~ 6
 AVDD
 $Comp
 L power:GNDA #PWR034
@@ -1409,7 +1403,7 @@ F 3 "~" H 4175 3250 50  0001 C CNN
 	1    4175 3250
 	-1   0    0    1   
 $EndComp
-Text GLabel 3950 3050 1    50   Input ~ 0
+Text GLabel 3950 3050 1    50   Input ~ 6
 AVDD
 Wire Wire Line
 	4175 3050 4175 3100
@@ -1492,23 +1486,23 @@ Wire Notes Line
 	950  1900 950  2725
 Wire Notes Line
 	1250 2850 1250 4225
-Text GLabel 1850 3225 2    50   Input ~ 0
+Text GLabel 1850 3225 2    50   Input ~ 6
 AIN_3+
-Text GLabel 1850 3325 2    50   Input ~ 0
+Text GLabel 1850 3325 2    50   Input ~ 6
 AIN_3-
-Text GLabel 1850 3450 2    50   Input ~ 0
+Text GLabel 1850 3450 2    50   Input ~ 6
 AIN_2+
-Text GLabel 1850 3550 2    50   Input ~ 0
+Text GLabel 1850 3550 2    50   Input ~ 6
 AIN_2-
-Text GLabel 1850 3675 2    50   Input ~ 0
+Text GLabel 1850 3675 2    50   Input ~ 6
 AIN_1+
-Text GLabel 1850 3775 2    50   Input ~ 0
+Text GLabel 1850 3775 2    50   Input ~ 6
 AIN_1-
-Text GLabel 1850 3900 2    50   Input ~ 0
+Text GLabel 1850 3900 2    50   Input ~ 6
 AIN_0+
-Text GLabel 1850 4000 2    50   Input ~ 0
+Text GLabel 1850 4000 2    50   Input ~ 6
 AIN_0-
-Text Notes 1475 7575 0    50   ~ 0
+Text Notes 1475 7575 0    50   ~ 6
 ACONDICIONAMIENTO CON FILTRO PASA BAJO RC
 Wire Notes Line
 	1250 2850 2700 2850
@@ -1519,16 +1513,14 @@ Wire Notes Line
 NoConn ~ 5250 5400
 NoConn ~ 5250 5300
 Wire Wire Line
-	5250 1850 5350 1850
+	5400 1175 5500 1175
 Wire Wire Line
-	5250 1950 5350 1950
+	5400 1275 5500 1275
 Wire Wire Line
-	5350 1950 5350 1850
-Connection ~ 5350 1850
+	5500 1275 5500 1175
+Connection ~ 5500 1175
 Wire Wire Line
-	5350 1850 5525 1850
-Wire Notes Line
-	4150 650  4150 2450
+	5500 1175 5675 1175
 $Comp
 L power:GNDD #PWR0106
 U 1 1 5CFE8F34
@@ -1544,11 +1536,11 @@ Wire Wire Line
 	6825 4175 6825 4000
 Wire Wire Line
 	6825 4000 6250 4000
-Text GLabel 4750 1650 0    50   Input ~ 0
+Text GLabel 4900 975  0    50   Input ~ 6
 RST-PD
-Text GLabel 5250 1750 2    50   Input ~ 0
+Text GLabel 5400 1075 2    50   Input ~ 6
 ALARM
-Text GLabel 4750 1750 0    50   Input ~ 0
+Text GLabel 4900 1075 0    50   Input ~ 6
 CS
 $Comp
 L ads8694_vers2:ADS8694_Vers2 U4
@@ -1582,4 +1574,10 @@ Wire Wire Line
 Wire Wire Line
 	5800 5900 5700 5900
 Connection ~ 5700 5900
+Wire Notes Line
+	4150 650  4150 1750
+Wire Notes Line
+	4150 1750 6200 1750
+Wire Notes Line
+	6200 1750 6200 650 
 $EndSCHEMATC
