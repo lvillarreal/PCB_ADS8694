@@ -5,7 +5,6 @@
  - 4 entradas diferenciales con acondiconamiento (AD8221)
  - Entrada canal 0 sin filtro RC
  - Entradas canales 1-3 con filtro RC, LP 
- - 2 pines para modo Daisy-Chain
  - Salida compatible con Pmod (6x6, 2.54mm, 90º) de Xilinx
  - Uso de referencia interna de AD
 
