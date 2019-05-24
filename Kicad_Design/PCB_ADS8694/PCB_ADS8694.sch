@@ -65,41 +65,41 @@ Wire Wire Line
 	2300 1000 2500 1000
 Wire Wire Line
 	2500 1000 2500 1050
-Text GLabel 6250 4400 2    50   Input ~ 6
+Text GLabel 6250 4400 2    50   Input ~ 10
 REFSEL
-Text GLabel 6250 4700 2    50   Input ~ 6
+Text GLabel 6250 4700 2    50   Input ~ 10
 ALARM
-Text GLabel 6250 4900 2    50   Input ~ 6
+Text GLabel 6250 4900 2    50   Input ~ 10
 REFCAP
-Text GLabel 6250 5100 2    50   Input ~ 6
+Text GLabel 6250 5100 2    50   Input ~ 10
 REFIO
-Text GLabel 6250 4200 2    50   Input ~ 6
+Text GLabel 6250 4200 2    50   Input ~ 10
 RST-PD
-Text GLabel 6250 3900 2    50   Input ~ 6
+Text GLabel 6250 3900 2    50   Input ~ 10
 CS
-Text GLabel 6250 3800 2    50   Input ~ 6
+Text GLabel 6250 3800 2    50   Input ~ 10
 SCLK
-Text GLabel 6250 3700 2    50   Input ~ 6
+Text GLabel 6250 3700 2    50   Input ~ 10
 SDI
-Text GLabel 6250 3600 2    50   Input ~ 6
+Text GLabel 6250 3600 2    50   Input ~ 10
 SDO
-Text GLabel 5250 3800 0    50   Input ~ 6
+Text GLabel 5250 3800 0    50   Input ~ 10
 AIN_1P
-Text GLabel 5250 4000 0    50   Input ~ 6
+Text GLabel 5250 4000 0    50   Input ~ 10
 AIN_2P
-Text GLabel 5250 4200 0    50   Input ~ 6
+Text GLabel 5250 4200 0    50   Input ~ 10
 AIN_3P
-Text GLabel 7200 800  0    50   Input ~ 6
+Text GLabel 7200 800  0    50   Input ~ 10
 REFSEL
-Text GLabel 7200 1150 0    50   Input ~ 6
+Text GLabel 7200 1150 0    50   Input ~ 10
 REFIO
-Text GLabel 7200 1550 0    50   Input ~ 6
+Text GLabel 7200 1550 0    50   Input ~ 10
 REFCAP
 Wire Wire Line
 	7200 1550 7200 1950
-Text Notes 6750 2650 0    50   ~ 6
+Text Notes 6750 2650 0    50   ~ 10
 CONFIGURACIÓN PARA USAR\nREFERENCIA INTERNA 4.096 [V]\n
-Text Notes 4950 1675 0    50   ~ 6
+Text Notes 4950 1675 0    50   ~ 10
 PMOD FPGA
 Wire Notes Line
 	950  1800 2950 1800
@@ -107,21 +107,21 @@ Wire Notes Line
 	2950 1800 2950 650 
 Wire Notes Line
 	2950 650  950  650 
-Text Notes 1450 1750 0    50   ~ 6
+Text Notes 1450 1750 0    50   ~ 10
 REGULADOR DE TENSIÓN, 5V\n
-Text Notes 7450 7500 0    79   ~ 6
+Text Notes 7450 7500 0    79   ~ 16
 PCB ADC8694 
 Wire Notes Line
 	950  650  950  1800
-Text GLabel 4900 1275 0    50   Input ~ 6
+Text GLabel 4900 1275 0    50   Input ~ 10
 SCLK
-Text GLabel 4900 1475 0    50   Input ~ 6
+Text GLabel 4900 1475 0    50   Input ~ 10
 SDO
-Text GLabel 4900 1175 0    50   Input ~ 6
+Text GLabel 4900 1175 0    50   Input ~ 10
 SDI
 Wire Notes Line
 	6200 650  4150 650 
-Text Notes 1400 2700 0    50   ~ 6
+Text Notes 1400 2700 0    50   ~ 10
 FUENTE DE CC EXTERNA, +-VCC
 Wire Notes Line
 	6650 650  8050 650 
@@ -289,11 +289,11 @@ F 3 "" H 6050 5800 50  0001 C CNN
 	1    6050 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 3425 2    50   Input ~ 6
+Text GLabel 9200 3425 2    50   Input ~ 10
 AIN_0P
-Text GLabel 8200 3625 0    50   Input ~ 6
+Text GLabel 8200 3625 0    50   Input ~ 10
 AIN_0+
-Text GLabel 8200 3325 0    50   Input ~ 6
+Text GLabel 8200 3325 0    50   Input ~ 10
 AIN_0-
 $Comp
 L Device:R_POT_TRIM_US RV4
@@ -354,9 +354,9 @@ F 3 "~" H 7675 5525 50  0001 C CNN
 	1    7675 5525
 	0    1    1    0   
 $EndComp
-Text GLabel 8325 5425 0    50   Input ~ 6
+Text GLabel 8325 5425 0    50   Input ~ 10
 AIN_3-
-Text GLabel 8325 5725 0    50   Input ~ 6
+Text GLabel 8325 5725 0    50   Input ~ 10
 AIN_3+
 Connection ~ 1125 6750
 Wire Wire Line
@@ -382,9 +382,9 @@ F 3 "~" H 1125 6600 50  0001 C CNN
 	1    1125 6600
 	0    1    1    0   
 $EndComp
-Text GLabel 1775 6500 0    50   Input ~ 6
+Text GLabel 1775 6500 0    50   Input ~ 10
 AIN_2-
-Text GLabel 1775 6800 0    50   Input ~ 6
+Text GLabel 1775 6800 0    50   Input ~ 10
 AIN_2+
 Connection ~ 1025 5175
 Wire Wire Line
@@ -410,9 +410,9 @@ F 3 "~" H 1025 5025 50  0001 C CNN
 	1    1025 5025
 	0    1    1    0   
 $EndComp
-Text GLabel 1675 4925 0    50   Input ~ 6
+Text GLabel 1675 4925 0    50   Input ~ 10
 AIN_1-
-Text GLabel 1675 5225 0    50   Input ~ 6
+Text GLabel 1675 5225 0    50   Input ~ 10
 AIN_1+
 $Comp
 L power:GNDA #PWR0117
@@ -425,9 +425,9 @@ F 3 "" H 3675 5350 50  0001 C CNN
 	1    3675 5350
 	1    0    0    -1  
 $EndComp
-Text Notes 8100 4375 0    50   ~ 6
+Text Notes 8100 4375 0    50   ~ 10
 ENTRADA CON ACONDICIONAMIENTO SIN FILTRO RC\n
-Text Notes 1275 4175 0    50   ~ 6
+Text Notes 1275 4175 0    50   ~ 10
 CONECTORES DE ENTRADA DE SEÑAL
 $Comp
 L power:VDD #PWR0112
@@ -528,9 +528,9 @@ F 3 "" H 5850 3100 50  0001 C CNN
 	1    5850 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2500 1000 2    50   Input ~ 6
+Text GLabel 2500 1000 2    50   Input ~ 10
 AVDD
-Text GLabel 5650 3100 1    50   Input ~ 6
+Text GLabel 5650 3100 1    50   Input ~ 10
 AVDD
 $Comp
 L power:VCC #PWR0121
@@ -637,7 +637,7 @@ Wire Wire Line
 Connection ~ 4600 3900
 Wire Wire Line
 	4600 3700 4600 3900
-Text GLabel 5250 3600 0    50   Input ~ 6
+Text GLabel 5250 3600 0    50   Input ~ 10
 AIN_0P
 $Comp
 L Device:C C9
@@ -694,7 +694,7 @@ F 3 "~" H 3750 5025 50  0001 C CNN
 	1    3750 5025
 	0    1    1    0   
 $EndComp
-Text GLabel 3900 5025 2    50   Input ~ 6
+Text GLabel 3900 5025 2    50   Input ~ 10
 AIN_1P
 $Comp
 L power:GNDA #PWR03
@@ -886,7 +886,7 @@ F 3 "~" H 3850 6600 50  0001 C CNN
 	1    3850 6600
 	0    1    1    0   
 $EndComp
-Text GLabel 4000 6600 2    50   Input ~ 6
+Text GLabel 4000 6600 2    50   Input ~ 10
 AIN_2P
 $Comp
 L power:GNDA #PWR06
@@ -1067,7 +1067,7 @@ F 3 "~" H 10400 5525 50  0001 C CNN
 	1    10400 5525
 	0    1    1    0   
 $EndComp
-Text GLabel 10550 5525 2    50   Input ~ 6
+Text GLabel 10550 5525 2    50   Input ~ 10
 AIN_3P
 $Comp
 L power:GNDA #PWR022
@@ -1344,7 +1344,7 @@ F 3 "" H 3725 3400 50  0001 C CNN
 	1    3725 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 3100 1    50   Input ~ 6
+Text GLabel 5750 3100 1    50   Input ~ 10
 AVDD
 $Comp
 L power:GNDA #PWR034
@@ -1403,7 +1403,7 @@ F 3 "~" H 4175 3250 50  0001 C CNN
 	1    4175 3250
 	-1   0    0    1   
 $EndComp
-Text GLabel 3950 3050 1    50   Input ~ 6
+Text GLabel 3950 3050 1    50   Input ~ 10
 AVDD
 Wire Wire Line
 	4175 3050 4175 3100
@@ -1486,23 +1486,23 @@ Wire Notes Line
 	950  1900 950  2725
 Wire Notes Line
 	1250 2850 1250 4225
-Text GLabel 1850 3225 2    50   Input ~ 6
+Text GLabel 1850 3225 2    50   Input ~ 10
 AIN_3+
-Text GLabel 1850 3325 2    50   Input ~ 6
+Text GLabel 1850 3325 2    50   Input ~ 10
 AIN_3-
-Text GLabel 1850 3450 2    50   Input ~ 6
+Text GLabel 1850 3450 2    50   Input ~ 10
 AIN_2+
-Text GLabel 1850 3550 2    50   Input ~ 6
+Text GLabel 1850 3550 2    50   Input ~ 10
 AIN_2-
-Text GLabel 1850 3675 2    50   Input ~ 6
+Text GLabel 1850 3675 2    50   Input ~ 10
 AIN_1+
-Text GLabel 1850 3775 2    50   Input ~ 6
+Text GLabel 1850 3775 2    50   Input ~ 10
 AIN_1-
-Text GLabel 1850 3900 2    50   Input ~ 6
+Text GLabel 1850 3900 2    50   Input ~ 10
 AIN_0+
-Text GLabel 1850 4000 2    50   Input ~ 6
+Text GLabel 1850 4000 2    50   Input ~ 10
 AIN_0-
-Text Notes 1475 7575 0    50   ~ 6
+Text Notes 1475 7575 0    50   ~ 10
 ACONDICIONAMIENTO CON FILTRO PASA BAJO RC
 Wire Notes Line
 	1250 2850 2700 2850
@@ -1536,11 +1536,11 @@ Wire Wire Line
 	6825 4175 6825 4000
 Wire Wire Line
 	6825 4000 6250 4000
-Text GLabel 4900 975  0    50   Input ~ 6
+Text GLabel 4900 975  0    50   Input ~ 10
 RST-PD
-Text GLabel 5400 1075 2    50   Input ~ 6
+Text GLabel 5400 1075 2    50   Input ~ 10
 ALARM
-Text GLabel 4900 1075 0    50   Input ~ 6
+Text GLabel 4900 1075 0    50   Input ~ 10
 CS
 $Comp
 L ads8694_vers2:ADS8694_Vers2 U4
@@ -1580,4 +1580,32 @@ Wire Notes Line
 	4150 1750 6200 1750
 Wire Notes Line
 	6200 1750 6200 650 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CE84135
+P 8275 6825
+F 0 "#PWR?" H 8275 6575 50  0001 C CNN
+F 1 "GNDA" H 8280 6652 50  0000 C CNN
+F 2 "" H 8275 6825 50  0001 C CNN
+F 3 "" H 8275 6825 50  0001 C CNN
+	1    8275 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 5CE84736
+P 8650 6825
+F 0 "#PWR?" H 8650 6575 50  0001 C CNN
+F 1 "GNDD" H 8654 6670 50  0000 C CNN
+F 2 "" H 8650 6825 50  0001 C CNN
+F 3 "" H 8650 6825 50  0001 C CNN
+	1    8650 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 6825 8275 6775
+Wire Wire Line
+	8275 6775 8650 6775
+Wire Wire Line
+	8650 6775 8650 6825
 $EndSCHEMATC
