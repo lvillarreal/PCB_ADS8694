@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PCB_ADS8694-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x06_Top_Bottom J4
-U 1 1 5CCB59D8
-P 5100 1175
-F 0 "J4" H 5150 1592 50  0000 C CNN
-F 1 "Conn_02x06_Male_Pmod_Spartan6" H 5150 1501 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 5100 1175 50  0001 C CNN
-F 3 "~" H 5100 1175 50  0001 C CNN
-	1    5100 1175
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Linear:LM7805_TO220 U1
 U 1 1 5CCB832F
@@ -52,7 +40,7 @@ L Device:CP C3
 U 1 1 5CCB9E68
 P 2500 1200
 F 0 "C3" H 2618 1246 50  0000 L CNN
-F 1 "0.1uF" H 2618 1155 50  0000 L CNN
+F 1 "100nF" H 2618 1155 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 2538 1050 50  0001 C CNN
 F 3 "~" H 2500 1200 50  0001 C CNN
 	1    2500 1200
@@ -114,14 +102,6 @@ Text Notes 7450 7500 0    79   ~ 16
 PCB ADC8694 
 Wire Notes Line
 	950  650  950  1800
-Text GLabel 5400 1175 2    50   Input ~ 10
-SCLK
-Text GLabel 5400 975  2    50   Input ~ 10
-SDO
-Text GLabel 5400 1275 2    50   Input ~ 10
-SDI
-Wire Notes Line
-	6200 650  4150 650 
 Text Notes 1400 2700 0    50   ~ 10
 FUENTE DE CC EXTERNA, +-VCC
 Wire Notes Line
@@ -266,19 +246,6 @@ Wire Wire Line
 Connection ~ 4600 4100
 Wire Wire Line
 	5250 3700 4600 3700
-NoConn ~ 4900 1475
-NoConn ~ 5400 1075
-$Comp
-L power:GNDD #PWR0118
-U 1 1 5CD843B0
-P 4475 1200
-F 0 "#PWR0118" H 4475 950 50  0001 C CNN
-F 1 "GNDD" H 4479 1045 50  0000 C CNN
-F 2 "" H 4475 1200 50  0001 C CNN
-F 3 "" H 4475 1200 50  0001 C CNN
-	1    4475 1200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDD #PWR0119
 U 1 1 5CD863F9
@@ -430,28 +397,6 @@ Text Notes 8100 4375 0    50   ~ 10
 ENTRADA CON ACONDICIONAMIENTO SIN FILTRO RC\n
 Text Notes 1275 4175 0    50   ~ 10
 CONECTORES DE ENTRADA DE SEÑAL
-$Comp
-L power:VDD #PWR0112
-U 1 1 5CD79A34
-P 4900 975
-F 0 "#PWR0112" H 4900 825 50  0001 C CNN
-F 1 "VDD" V 4918 1102 50  0000 L CNN
-F 2 "" H 4900 975 50  0001 C CNN
-F 3 "" H 4900 975 50  0001 C CNN
-	1    4900 975 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VDD #PWR0116
-U 1 1 5CD7F938
-P 4900 1075
-F 0 "#PWR0116" H 4900 925 50  0001 C CNN
-F 1 "VDD" V 4917 1203 50  0000 L CNN
-F 2 "" H 4900 1075 50  0001 C CNN
-F 3 "" H 4900 1075 50  0001 C CNN
-	1    4900 1075
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5CD83F62
@@ -1399,7 +1344,7 @@ U 1 1 5CDFC6A9
 P 4175 3250
 F 0 "C15" H 3975 3175 50  0000 L CNN
 F 1 "1uf" H 4200 3350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4213 3100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4213 3100 50  0001 C CNN
 F 3 "~" H 4175 3250 50  0001 C CNN
 	1    4175 3250
 	-1   0    0    1   
@@ -1528,12 +1473,6 @@ Wire Wire Line
 	6825 4175 6825 4000
 Wire Wire Line
 	6825 4000 6250 4000
-Text GLabel 5400 1475 2    50   Input ~ 10
-RST-PD
-Text GLabel 4900 1375 0    50   Input ~ 10
-ALARM
-Text GLabel 5400 1375 2    50   Input ~ 10
-CS
 $Comp
 L ads8694_vers2:ADS8694_Vers2 U4
 U 1 1 5CE32CBF
@@ -1564,23 +1503,98 @@ Wire Wire Line
 Wire Wire Line
 	5800 5900 5700 5900
 Wire Notes Line
-	4150 650  4150 1750
-Wire Notes Line
-	4150 1750 6200 1750
+	4100 650  4100 1750
 Wire Notes Line
 	6200 1750 6200 650 
 Wire Wire Line
 	5600 5900 5700 5900
 Connection ~ 5700 5900
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 5CF71E08
+P 4350 1125
+F 0 "J2" H 4458 1506 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 4458 1415 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4350 1125 50  0001 C CNN
+F 3 "~" H 4350 1125 50  0001 C CNN
+	1    4350 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5CF72D62
+P 5450 1125
+F 0 "J3" H 5558 1506 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 5558 1415 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5450 1125 50  0001 C CNN
+F 3 "~" H 5450 1125 50  0001 C CNN
+	1    5450 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR01
+U 1 1 5CF73629
+P 4550 925
+F 0 "#PWR01" H 4550 775 50  0001 C CNN
+F 1 "VDD" V 4568 1052 50  0000 L CNN
+F 2 "" H 4550 925 50  0001 C CNN
+F 3 "" H 4550 925 50  0001 C CNN
+	1    4550 925 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR036
+U 1 1 5CF783CD
+P 5650 925
+F 0 "#PWR036" H 5650 775 50  0001 C CNN
+F 1 "VDD" V 5668 1052 50  0000 L CNN
+F 2 "" H 5650 925 50  0001 C CNN
+F 3 "" H 5650 925 50  0001 C CNN
+	1    5650 925 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR07
+U 1 1 5CF786F3
+P 5000 1025
+F 0 "#PWR07" H 5000 775 50  0001 C CNN
+F 1 "GNDD" H 5004 870 50  0000 C CNN
+F 2 "" H 5000 1025 50  0001 C CNN
+F 3 "" H 5000 1025 50  0001 C CNN
+	1    5000 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR037
+U 1 1 5CF7E8E9
+P 6075 1025
+F 0 "#PWR037" H 6075 775 50  0001 C CNN
+F 1 "GNDD" H 6079 870 50  0000 C CNN
+F 2 "" H 6075 1025 50  0001 C CNN
+F 3 "" H 6075 1025 50  0001 C CNN
+	1    6075 1025
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4900 1275 4825 1275
+	6075 1025 5650 1025
+Text GLabel 5650 1325 2    50   Input ~ 10
+ALARM
 Wire Wire Line
-	4825 1275 4825 1175
-Connection ~ 4825 1175
-Wire Wire Line
-	4825 1175 4900 1175
-Wire Wire Line
-	4475 1200 4475 1175
-Wire Wire Line
-	4475 1175 4825 1175
+	4550 1025 5000 1025
+NoConn ~ 5650 1125
+Text GLabel 4550 1225 2    50   Input ~ 10
+SDO
+NoConn ~ 5650 1225
+Text GLabel 4550 1325 2    50   Input ~ 10
+SCLK
+Text GLabel 4550 1125 2    50   Input ~ 10
+SDI
+Text GLabel 4550 1425 2    50   Input ~ 10
+CS
+Text GLabel 5650 1425 2    50   Input ~ 10
+RST-PD
+Wire Notes Line
+	4100 1750 6200 1750
+Wire Notes Line
+	4100 650  6200 650 
 $EndSCHEMATC
