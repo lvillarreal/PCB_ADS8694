@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP dcp01b
+D DCP01B Series 1-W, Isolated, Unregulated DC/DC Converter Modules
+F http://www.ti.com/lit/ds/symlink/dcp010507db.pdf
+$ENDCMP
+#
+#End Doc Library
